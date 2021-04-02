@@ -26,7 +26,7 @@ using UnityEngine.UI;
     }
 }
 */
-*/public class PlayerInteractionController : MonoBehaviour
+public class PlayerInteractionController : MonoBehaviour
 {
     [Header("Interaction settings")] 
     public float maxDistance = 5;
@@ -56,7 +56,6 @@ using UnityEngine.UI;
         }
             
     } 
-    */
 }
 
 // wenn ich nah genug am Bild dran bin, kann ich auf die space taste drücken und 
