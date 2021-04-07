@@ -9,9 +9,26 @@ public class PlayerRaycasting : MonoBehaviour
     public float distanceToSee;
     // to store the object that I hit with my ray
     private RaycastHit objectThatIHit; 
+    
+    private int _winningThreshold;
+    private int _collected;
+    private bool _wonTheGame;
     void Start()
     {
+        _collected = 0;
+        _wonTheGame = false;
+        _winningThreshold = GameObject.FindGameObjectsWithTag("Collectable").Length;
         
+    }
+    
+    private void LateUpdate()
+    {
+        if (_collected >= _winningThreshold && !_wonTheGame)
+        {
+            Debug.Log("You won!");
+            //Debug.Log(string.Format("You took : {} seconds", Time.realtimeSinceStartup));
+            _wonTheGame = true;
+        }
     }
 
     void Update()
@@ -29,6 +46,13 @@ public class PlayerRaycasting : MonoBehaviour
                     // puzzle will be displayed  
                     // and also the input field 
                     Debug.Log("Please solve the " + objectThatIHit.collider.gameObject.name);
+                }
+                
+                if (objectThatIHit.collider.gameObject.CompareTag("Collectable"))
+                {
+                    Debug.Log("Collect " + objectThatIHit.collider.gameObject.name);
+                    Destroy(objectThatIHit.collider.gameObject);
+                    _collected++;
                 }
             }
         }
