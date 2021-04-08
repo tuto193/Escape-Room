@@ -25,7 +25,7 @@ public class PlayerRaycasting : MonoBehaviour
     {
         if (_collected >= _winningThreshold && !_wonTheGame)
         {
-            Debug.Log("You won!");
+            Debug.Log("You solved all the riddles and now you are free. Yay!");
             //Debug.Log(string.Format("You took : {} seconds", Time.realtimeSinceStartup));
             _wonTheGame = true;
         }
