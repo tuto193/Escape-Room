@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class KeyCards : MonoBehaviour
 {
-    public enum Keycards {first, second, third, fourth, fifth, sixth};
-    public KeyCards.Keycards whatKeyAmI;
+    public enum Keycards_objects {nr1 = 1, nr2, nr3, nr4, nr5, nr6};
+    public KeyCards.Keycards_objects whatIsMyNumber;
+    
 
 }
