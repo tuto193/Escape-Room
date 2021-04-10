@@ -16,12 +16,25 @@ public class PlayerRaycasting : MonoBehaviour
     private bool _wonTheGame;
     private string _currentRiddle;
     private bool _seenRiddle;
+    private GameObject[] _riddles;
     void Start()
     {
         _collected = 0;
         _wonTheGame = false;
+        _riddles = GameObject.FindGameObjectsWithTag("Puzzle");
         _winningThreshold = GameObject.FindGameObjectsWithTag("Collectable").Length;
         _currentRiddle = "nr1"; // oder erst, nachdem das erste Rätsel angeklickt wurde?
+        for (int i = 0; i < _winningThreshold; i++)
+        {
+            if (i == 0)
+            {
+                _currentRiddle = _riddles[i].GetComponent<Collider>().gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString();
+            }
+            else
+            {
+               _riddles[i].SetActive(false); 
+            }
+        }
         _seenRiddle = false;
 
     }
@@ -72,20 +85,31 @@ public class PlayerRaycasting : MonoBehaviour
                 // if the thing I collided with is an "answer"-object 
                 if (objectThatIHit.collider.gameObject.CompareTag("Collectable"))
                 {
-                    if (objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle && _seenRiddle == true)
+                    if (objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle)
                     {
-                        Debug.Log("Collected " + objectThatIHit.collider.gameObject.name);
-                        Destroy(objectThatIHit.collider.gameObject);
-                        int _currentState = (int) Char.GetNumericValue(_currentRiddle[2]);
-                        _currentState++;
-                        _currentRiddle = "nr" + _currentState.ToString();
-                        //Debug.Log("_currentRiddle: " + _currentRiddle);
-                        _collected++;
-                        _seenRiddle = false;
+                        if (_seenRiddle == true)
+                        {
+                            Debug.Log("Collected " + objectThatIHit.collider.gameObject.name);
+                            Destroy(objectThatIHit.collider.gameObject);
+                            int _currentState = (int) Char.GetNumericValue(_currentRiddle[2]);
+                            if (_currentState < _winningThreshold)
+                            {
+                                _riddles[_currentState].SetActive(true);
+                            }
+                            _currentState++;
+                            _currentRiddle = "nr" + _currentState.ToString();
+                            //Debug.Log("_currentRiddle: " + _currentRiddle);
+                            _collected++;
+                            _seenRiddle = false;
+                        }
+                        else
+                        {
+                            Debug.Log("Cannot be collected yet. Please look at the next riddle first.");
+                        }
                     }
                     else
                     {
-                        Debug.Log("Cannot be collected yet. Please solve the riddle with " + _currentRiddle + " first or if already done so, look at the next riddle.");
+                        Debug.Log("Cannot be collected yet. Please solve the riddle with " + _currentRiddle + " first.");
                     }
                 }
             }
