@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,10 +18,18 @@ public class PlayerRaycasting : MonoBehaviour
     private string _currentRiddle;
     private bool _seenRiddle;
     private GameObject[] _riddles;
+    public ProgressBar _progressBar;
+    //public TextMeshProUGUI inputField;
+    public TMP_InputField inputF;
+    private string inputText;
     void Start()
     {
+        //_progressBar.current = _collected;
         _collected = 0;
         _wonTheGame = false;
+        print(inputF.text);
+        inputF.gameObject.SetActive(false);
+        //inputField.gameObject.SetActive(false);
         _riddles = GameObject.FindGameObjectsWithTag("Puzzle");
         _winningThreshold = GameObject.FindGameObjectsWithTag("Collectable").Length;
         _currentRiddle = "nr1"; // oder erst, nachdem das erste Rätsel angeklickt wurde?
@@ -75,6 +84,17 @@ public class PlayerRaycasting : MonoBehaviour
                         _currentRiddle = objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber
                             .ToString();
                         _seenRiddle = true;
+                        inputF.gameObject.SetActive(true);
+                        inputF.ActivateInputField();
+                        
+                        //inputField.gameObject.SetActive(true);
+                        //if (Input.GetKey(KeyCode.Return))
+                        //{
+                         //   string input = inputField.GetComponent<Text>().text;
+                          //  inputF.DeactivateInputField();
+                          //  inputF.gameObject.SetActive(false);
+                            //inputField.gameObject.SetActive(false);
+                        //}
                     }
                     else
                     {
@@ -101,6 +121,7 @@ public class PlayerRaycasting : MonoBehaviour
                             //Debug.Log("_currentRiddle: " + _currentRiddle);
                             _collected++;
                             _seenRiddle = false;
+                            _progressBar.current = _collected;
                         }
                         else
                         {
@@ -115,5 +136,13 @@ public class PlayerRaycasting : MonoBehaviour
             }
         }
         
+    }
+
+    public void ReadInput(string s)
+    {
+        inputText = s;
+        //Debug.Log("input: "+ inputText);
+        inputF.DeactivateInputField(true);
+        inputF.gameObject.SetActive(false);
     }
 } 
