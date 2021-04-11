@@ -14,6 +14,7 @@ public class PlayerRaycasting : MonoBehaviour
     private RaycastHit _objectThatIHit;
     public Image endTextBackground;
     public TextMeshProUGUI endText;
+    public Image keyTextBackground;
     public Image startTextBackground;
     
     private int _winningThreshold;
@@ -36,6 +37,7 @@ public class PlayerRaycasting : MonoBehaviour
         inputF.gameObject.SetActive(false);
         endTextBackground.gameObject.SetActive(false);
         endText.gameObject.SetActive(false);
+        keyTextBackground.gameObject.SetActive(false);
         _key = GameObject.FindGameObjectWithTag("Key");
         _key.SetActive(false);
         _riddles = GameObject.FindGameObjectsWithTag("Puzzle");
@@ -61,6 +63,7 @@ public class PlayerRaycasting : MonoBehaviour
         if (_collected >= _winningThreshold && !_wonTheGame)
         {
             _key.SetActive(true);
+            keyTextBackground.gameObject.SetActive(true);
 
             Debug.Log("You solved all the riddles and suddenly you hear a strange noise behind you. What is it?");
             //Debug.Log(string.Format("You took : {} seconds", Time.realtimeSinceStartup));
@@ -74,6 +77,10 @@ public class PlayerRaycasting : MonoBehaviour
         {
             startTextBackground.gameObject.SetActive(false);
             progressBar.gameObject.SetActive(true);
+            if (_wonTheGame)
+            {
+                keyTextBackground.gameObject.SetActive(false);
+            }
         }
         
         Debug.DrawRay(this.transform.position, this.transform.forward * distanceToSee, Color.magenta);
