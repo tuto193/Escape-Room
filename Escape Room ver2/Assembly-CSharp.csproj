@@ -55,8 +55,9 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerRaycasting.cs" />
      <Compile Include="Assets\Scripts\KeyCards.cs" />
-     <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\ProgressBar.cs" />
+     <Compile Include="Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Key_appearance.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Flames Of The Phoenix\READ_ME.txt" />
@@ -77,6 +78,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\uipack_fixed\Spritesheet\yellowSheet.xml" />
+     <None Include="Assets\Models\Key\readME keys.txt" />
      <None Include="Assets\uipack_fixed\Spritesheet\greenSheet.xml" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\uipack_fixed\Spritesheet\redSheet.xml" />
@@ -683,10 +685,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="LeanTransition.csproj">
-      <Project>{30054209-1b46-c6cd-e26e-1c228d50a89b}</Project>
-      <Name>LeanTransition</Name>
-    </ProjectReference>
     <ProjectReference Include="LeanCommon.csproj">
       <Project>{3ed38845-3c32-567c-3740-ded09fe398a7}</Project>
       <Name>LeanCommon</Name>
@@ -694,6 +692,10 @@
     <ProjectReference Include="LeanGUI.csproj">
       <Project>{4c340382-f886-7033-326a-7349d2a02b27}</Project>
       <Name>LeanGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanTransition.csproj">
+      <Project>{30054209-1b46-c6cd-e26e-1c228d50a89b}</Project>
+      <Name>LeanTransition</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

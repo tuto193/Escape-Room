@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Puzzle
   - Collectable
+  - Key
+  - End_Text
   layers:
   - Default
   - TransparentFX

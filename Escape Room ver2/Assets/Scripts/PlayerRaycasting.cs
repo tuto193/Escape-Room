@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class PlayerRaycasting : MonoBehaviour
@@ -10,7 +11,10 @@ public class PlayerRaycasting : MonoBehaviour
     // how long we want our raycast to draw out 
     public float distanceToSee;
     // to store the object that I hit with my ray
-    private RaycastHit objectThatIHit; 
+    private RaycastHit _objectThatIHit;
+    public Image endTextBackground;
+    public TextMeshProUGUI endText;
+    public Image startTextBackground;
     
     private int _winningThreshold;
     private int _collected;
@@ -18,21 +22,25 @@ public class PlayerRaycasting : MonoBehaviour
     private string _currentRiddle;
     private bool _seenRiddle;
     private GameObject[] _riddles;
-    public ProgressBar _progressBar;
+    private GameObject _key;
+    public ProgressBar progressBar;
     //public TextMeshProUGUI inputField;
     public TMP_InputField inputF;
-    private string inputText;
     void Start()
     {
         //_progressBar.current = _collected;
+        progressBar.gameObject.SetActive(false);
         _collected = 0;
         _wonTheGame = false;
         print(inputF.text);
         inputF.gameObject.SetActive(false);
-        //inputField.gameObject.SetActive(false);
+        endTextBackground.gameObject.SetActive(false);
+        endText.gameObject.SetActive(false);
+        _key = GameObject.FindGameObjectWithTag("Key");
+        _key.SetActive(false);
         _riddles = GameObject.FindGameObjectsWithTag("Puzzle");
         _winningThreshold = GameObject.FindGameObjectsWithTag("Collectable").Length;
-        _currentRiddle = "nr1"; // oder erst, nachdem das erste Rätsel angeklickt wurde?
+        //_currentRiddle = "nr1"; // oder erst, nachdem das erste Rätsel angeklickt wurde?
         for (int i = 0; i < _winningThreshold; i++)
         {
             if (i == 0)
@@ -52,7 +60,9 @@ public class PlayerRaycasting : MonoBehaviour
     {
         if (_collected >= _winningThreshold && !_wonTheGame)
         {
-            Debug.Log("You solved all the riddles and now you are free. Yay!");
+            _key.SetActive(true);
+
+            Debug.Log("You solved all the riddles and suddenly you hear a strange noise behind you. What is it?");
             //Debug.Log(string.Format("You took : {} seconds", Time.realtimeSinceStartup));
             _wonTheGame = true;
         }
@@ -60,68 +70,59 @@ public class PlayerRaycasting : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.Return))
+        {
+            startTextBackground.gameObject.SetActive(false);
+            progressBar.gameObject.SetActive(true);
+        }
+        
         Debug.DrawRay(this.transform.position, this.transform.forward * distanceToSee, Color.magenta);
         
-        if(Physics.Raycast(this.transform.position, this.transform.forward, out objectThatIHit, distanceToSee))
+        if(Physics.Raycast(this.transform.position, this.transform.forward, out _objectThatIHit, distanceToSee))
         {
             if (Input.GetKey(KeyCode.Space))
             {
                 // if the object I collided with is a Puzzle 
                 // (solve pictures by order maybe with enum (https://www.youtube.com/watch?v=isiOcFXubXY) --> next video maybe also for opening door)
-                if (objectThatIHit.collider.gameObject.CompareTag("Puzzle"))
+                if (_objectThatIHit.collider.gameObject.CompareTag("Puzzle"))
                 {
-                    if (objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle)
+                    if (_objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle)
                     {
-                        
-                        // all riddles are hidden 
-                        // if riddle is clicked 
-                        // if riddle is next riddle (==currentState) (and previous riddle is solved -> change currentState) 
-                        // turn / unhide 
 
                         // puzzle will be displayed  
                         // and also the input field 
-                        Debug.Log("Please solve the " + objectThatIHit.collider.gameObject.name);
-                        _currentRiddle = objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber
+                        Debug.Log("Please solve the " + _objectThatIHit.collider.gameObject.name);
+                        _currentRiddle = _objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber
                             .ToString();
                         _seenRiddle = true;
                         inputF.gameObject.SetActive(true);
                         inputF.ActivateInputField();
-                        
-                        //inputField.gameObject.SetActive(true);
-                        //if (Input.GetKey(KeyCode.Return))
-                        //{
-                         //   string input = inputField.GetComponent<Text>().text;
-                          //  inputF.DeactivateInputField();
-                          //  inputF.gameObject.SetActive(false);
-                            //inputField.gameObject.SetActive(false);
-                        //}
                     }
                     else
                     {
-                        Debug.Log("Not possible yet. Please solve the riddle with " + _currentRiddle + " first. This is the riddle with " + objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber);
+                        Debug.Log("Not possible yet. Please solve the riddle with " + _currentRiddle + " first. This is the riddle with " + _objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber);
                     }
                 }
                 
                 // if the thing I collided with is an "answer"-object 
-                if (objectThatIHit.collider.gameObject.CompareTag("Collectable"))
+                else if (_objectThatIHit.collider.gameObject.CompareTag("Collectable"))
                 {
-                    if (objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle)
+                    if (_objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle)
                     {
                         if (_seenRiddle == true)
                         {
-                            Debug.Log("Collected " + objectThatIHit.collider.gameObject.name);
-                            Destroy(objectThatIHit.collider.gameObject);
-                            int _currentState = (int) Char.GetNumericValue(_currentRiddle[2]);
-                            if (_currentState < _winningThreshold)
+                            Debug.Log("Collected " + _objectThatIHit.collider.gameObject.name);
+                            Destroy(_objectThatIHit.collider.gameObject);
+                            int currentState = (int) Char.GetNumericValue(_currentRiddle[2]);
+                            if (currentState < _winningThreshold)
                             {
-                                _riddles[_currentState].SetActive(true);
+                                _riddles[currentState].SetActive(true);
                             }
-                            _currentState++;
-                            _currentRiddle = "nr" + _currentState.ToString();
-                            //Debug.Log("_currentRiddle: " + _currentRiddle);
+                            currentState++;
+                            _currentRiddle = "nr" + currentState.ToString();
                             _collected++;
                             _seenRiddle = false;
-                            _progressBar.current = _collected;
+                            progressBar.current = _collected;
                         }
                         else
                         {
@@ -133,16 +134,39 @@ public class PlayerRaycasting : MonoBehaviour
                         Debug.Log("Cannot be collected yet. Please solve the riddle with " + _currentRiddle + " first.");
                     }
                 }
+                else if (_objectThatIHit.collider.gameObject.CompareTag("Key"))
+                {
+                    Debug.Log("hit key");
+                    _key.SetActive(false);
+                    endText.gameObject.SetActive(true);
+                    endTextBackground.gameObject.SetActive(true);
+                }
             }
         }
         
     }
 
-    public void ReadInput(string s)
+    public void ReadInput()
     {
-        inputText = s;
-        //Debug.Log("input: "+ inputText);
-        inputF.DeactivateInputField(true);
-        inputF.gameObject.SetActive(false);
+        print(inputF.text);
+        if (inputF.text == null)
+        {
+            Debug.Log("No input text.");
+        }
+        else if (_objectThatIHit.collider.gameObject.GetComponent<KeyCards>().Text == null)
+        {
+            Debug.Log("No object or no text of object.");
+        }
+        else if (inputF.text == "skip" ||
+                 inputF.text == "Skip" || _objectThatIHit.collider.gameObject.GetComponent<KeyCards>().Text == inputF.text)
+        {
+            inputF.DeactivateInputField(true);
+            inputF.gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("The answer is not correct. Try again!");
+        }
+        
     }
 } 

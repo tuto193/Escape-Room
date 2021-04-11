@@ -52,35 +52,35 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelection.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanConstrainToParent.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanHover.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanWindowCloser.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanWindow.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanResize.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanButton.cs" />
      <Compile Include="Assets\Lean\GUI\Scripts\LeanTooltip.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanMoveToTop.cs" />
      <Compile Include="Assets\Lean\GUI\Scripts\LeanOrientation.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionHighlight.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanShake.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanHitbox.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSwipe.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanTooltipData.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSnapEvent.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSnap.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSizer.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanPulse.cs" />
      <Compile Include="Assets\Lean\GUI\Scripts\LeanToggle.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanJoystick.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSwitch.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanConstrainAnchoredPosition.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanDrag.cs" />
-     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionManager.cs" />
      <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionPriority.cs" />
      <Compile Include="Assets\Lean\GUI\Scripts\LeanGui.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanConstrainToParent.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanHitbox.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelection.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanWindowCloser.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanResize.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionHighlight.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanShake.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanPulse.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanConstrainAnchoredPosition.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanWindow.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanTooltipData.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSnapEvent.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanJoystick.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanMoveToTop.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSwipe.cs" />
      <Compile Include="Assets\Lean\GUI\Scripts\LeanSafeArea.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSizer.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionManager.cs" />
      <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectable.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanHover.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanButton.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSnap.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSwitch.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanDrag.cs" />
      <None Include="Assets\Lean\GUI\LeanGUI.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
