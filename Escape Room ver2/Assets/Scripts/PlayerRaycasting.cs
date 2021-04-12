@@ -34,6 +34,9 @@ public class PlayerRaycasting : MonoBehaviour
     public AudioClip drop;
     public AudioClip gameEnd;
     public AudioClip keyAppears;
+    public AudioClip keyTextAudio;
+    public AudioClip startTextAudio;
+    public AudioClip endTextAudio;
 
     private bool _shownIntro;
     //public TextMeshProUGUI inputField;
@@ -80,6 +83,8 @@ public class PlayerRaycasting : MonoBehaviour
             keyTextBackground.gameObject.SetActive(true);
             _source.clip = keyAppears;
             _source.Play();
+            _source.clip = keyTextAudio;
+            _source.Play();
 
             Debug.Log("You solved all the riddles and suddenly you hear a strange noise behind you. What is it?");
             //Debug.Log(string.Format("You took : {} seconds", Time.realtimeSinceStartup));
@@ -96,6 +101,8 @@ public class PlayerRaycasting : MonoBehaviour
                 Destroy(introVideo.gameObject);
                 Destroy(videoPlayer.gameObject);
                 _shownIntro = true;
+                _source.clip = startTextAudio;
+                _source.Play();
             }
             else if (_wonTheGame)
             {
@@ -106,6 +113,7 @@ public class PlayerRaycasting : MonoBehaviour
         {
             startTextBackground.gameObject.SetActive(false);
             progressBar.gameObject.SetActive(true);
+            
         }
         
         
@@ -178,6 +186,8 @@ public class PlayerRaycasting : MonoBehaviour
                     endText.gameObject.SetActive(true);
                     endTextBackground.gameObject.SetActive(true);
                     _source.clip = gameEnd;
+                    _source.Play();
+                    _source.clip = endTextAudio;
                     _source.Play();
                 }
             }
