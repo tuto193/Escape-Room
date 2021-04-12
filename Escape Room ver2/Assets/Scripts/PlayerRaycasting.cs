@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class PlayerRaycasting : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PlayerRaycasting : MonoBehaviour
     public TextMeshProUGUI endText;
     public Image keyTextBackground;
     public Image startTextBackground;
-    
+    public RawImage IntroVideo;
     private int _winningThreshold;
     private int _collected;
     private bool _wonTheGame;
@@ -25,11 +26,15 @@ public class PlayerRaycasting : MonoBehaviour
     private GameObject[] _riddles;
     private GameObject _key;
     public ProgressBar progressBar;
+    public VideoPlayer VideoPlayer;
+
+    private bool _shownIntro;
     //public TextMeshProUGUI inputField;
     public TMP_InputField inputF;
     void Start()
     {
         //_progressBar.current = _collected;
+        _shownIntro = false;
         progressBar.gameObject.SetActive(false);
         _collected = 0;
         _wonTheGame = false;
@@ -60,6 +65,8 @@ public class PlayerRaycasting : MonoBehaviour
     
     private void LateUpdate()
     {
+        
+
         if (_collected >= _winningThreshold && !_wonTheGame)
         {
             _key.SetActive(true);
@@ -75,13 +82,23 @@ public class PlayerRaycasting : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return))
         {
-            startTextBackground.gameObject.SetActive(false);
-            progressBar.gameObject.SetActive(true);
-            if (_wonTheGame)
+            if (_shownIntro == false)
+            {
+                Destroy(IntroVideo.gameObject);
+                Destroy(VideoPlayer.gameObject);
+                _shownIntro = true;
+            }
+            else if (_wonTheGame)
             {
                 keyTextBackground.gameObject.SetActive(false);
             }
         }
+        if (Input.GetKey(KeyCode.Space) && _shownIntro)
+        {
+            startTextBackground.gameObject.SetActive(false);
+            progressBar.gameObject.SetActive(true);
+        }
+        
         
         Debug.DrawRay(this.transform.position, this.transform.forward * distanceToSee, Color.magenta);
         
