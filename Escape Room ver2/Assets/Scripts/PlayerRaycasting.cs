@@ -13,11 +13,13 @@ public class PlayerRaycasting : MonoBehaviour
     public float distanceToSee;
     // to store the object that I hit with my ray
     private RaycastHit _objectThatIHit;
+    public AudioClip collect;
+    private AudioSource _source;
     public Image endTextBackground;
     public TextMeshProUGUI endText;
     public Image keyTextBackground;
     public Image startTextBackground;
-    public RawImage IntroVideo;
+    public RawImage introVideo;
     private int _winningThreshold;
     private int _collected;
     private bool _wonTheGame;
@@ -26,13 +28,17 @@ public class PlayerRaycasting : MonoBehaviour
     private GameObject[] _riddles;
     private GameObject _key;
     public ProgressBar progressBar;
-    public VideoPlayer VideoPlayer;
+    public VideoPlayer videoPlayer;
+    public AudioClip confirmation;
+    public AudioClip noConfirmation;
+    public AudioClip drop;
 
     private bool _shownIntro;
     //public TextMeshProUGUI inputField;
     public TMP_InputField inputF;
     void Start()
     {
+        _source = this.GetComponent<AudioSource>();
         //_progressBar.current = _collected;
         _shownIntro = false;
         progressBar.gameObject.SetActive(false);
@@ -84,8 +90,8 @@ public class PlayerRaycasting : MonoBehaviour
         {
             if (_shownIntro == false)
             {
-                Destroy(IntroVideo.gameObject);
-                Destroy(VideoPlayer.gameObject);
+                Destroy(introVideo.gameObject);
+                Destroy(videoPlayer.gameObject);
                 _shownIntro = true;
             }
             else if (_wonTheGame)
@@ -121,6 +127,8 @@ public class PlayerRaycasting : MonoBehaviour
                         _seenRiddle = true;
                         inputF.gameObject.SetActive(true);
                         inputF.ActivateInputField();
+                        _source.clip = drop;
+                        _source.Play();
                     }
                     else
                     {
@@ -137,6 +145,8 @@ public class PlayerRaycasting : MonoBehaviour
                         {
                             Debug.Log("Collected " + _objectThatIHit.collider.gameObject.name);
                             Destroy(_objectThatIHit.collider.gameObject);
+                            _source.clip = collect;
+                            _source.Play();
                             int currentState = (int) Char.GetNumericValue(_currentRiddle[2]);
                             if (currentState < _winningThreshold)
                             {
@@ -184,11 +194,15 @@ public class PlayerRaycasting : MonoBehaviour
         else if (inputF.text == "skip" ||
                  inputF.text == "Skip" || _objectThatIHit.collider.gameObject.GetComponent<KeyCards>().Text == inputF.text)
         {
+            _source.clip = confirmation;
+            _source.Play();
             inputF.DeactivateInputField(true);
             inputF.gameObject.SetActive(false);
         }
         else
         {
+            _source.clip = noConfirmation;
+            _source.Play();
             Debug.Log("The answer is not correct. Try again!");
         }
         

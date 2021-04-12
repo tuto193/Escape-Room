@@ -66,7 +66,6 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\license.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\Lean\READ ME.txt" />
      <None Include="Assets\uipack_fixed\Spritesheet\blueSheet.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\uipack_fixed\Spritesheet\greySheet.xml" />
