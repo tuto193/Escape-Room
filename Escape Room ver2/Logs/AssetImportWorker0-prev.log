@@ -15,11 +15,11 @@ C:/Users/Molly_zyezchm/OneDrive/Dokumente/Uni/Unity/Escape-Room/Escape Room ver2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51611
+52107
 Successfully changed project path to: C:/Users/Molly_zyezchm/OneDrive/Dokumente/Uni/Unity/Escape-Room/Escape Room ver2
 C:/Users/Molly_zyezchm/OneDrive/Dokumente/Uni/Unity/Escape-Room/Escape Room ver2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 39.10 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 37.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1088 +35,504 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006710 seconds.
+Registered in 0.006365 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 38.10 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 31.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.354 seconds
+- Completed reload, in  1.247 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001419 seconds.
+Registered in 0.001335 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.026 seconds
+- Completed reload, in  1.035 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1132 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.8 MB.
-System memory in use after: 64.8 MB.
+System memory in use before: 63.7 MB.
+System memory in use after: 63.7 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1594.
-Total: 2.200900 ms (FindLiveObjects: 0.159200 ms CreateObjectMapping: 0.051300 ms MarkObjects: 1.853800 ms  DeleteObjects: 0.135000 ms)
+Total: 2.233300 ms (FindLiveObjects: 0.227600 ms CreateObjectMapping: 0.080600 ms MarkObjects: 1.789500 ms  DeleteObjects: 0.133600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sound Pack Free Edition
-  artifactKey: Guid(33a483c9e307efc438a7dd3503359118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound Pack Free Edition using Guid(33a483c9e307efc438a7dd3503359118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6350673229faefd1051dd0d1600193b4') in 0.009216 seconds
-  Import took 0.012309 seconds .
+  path: Assets/Models/Key/Models/Materials/keyY_specular.mat
+  artifactKey: Guid(06cd055a48274ca4d94571ea7d5c77fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Key/Models/Materials/keyY_specular.mat using Guid(06cd055a48274ca4d94571ea7d5c77fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26ec9e2c525df82413251f53630bcce') in 0.214732 seconds
+  Import took 0.216891 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Sound Pack Free Edition/click_01.wav
-  artifactKey: Guid(9c81708937d7b400f94950a59f4ca6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound Pack Free Edition/click_01.wav using Guid(9c81708937d7b400f94950a59f4ca6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf8661b39024d1e247be3f26e08bca2') in 0.178537 seconds
-  Import took 0.181151 seconds .
+  Time since last request: 0.000397 seconds.
+  path: Assets/Models/Key/Models/Key_gold_mat.mat
+  artifactKey: Guid(ed8f9be796d22ce41a61877771323fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Key/Models/Key_gold_mat.mat using Guid(ed8f9be796d22ce41a61877771323fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53d5c04cb9f35b764f9cca2523510e1') in 0.027043 seconds
+  Import took 0.030285 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Sound Pack Free Edition/click_02.wav
-  artifactKey: Guid(8e8218f6a01e74bd5894788e3f912635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound Pack Free Edition/click_02.wav using Guid(8e8218f6a01e74bd5894788e3f912635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6604f044ec2cb2eb13baf7dedd80c871') in 0.013188 seconds
-  Import took 0.015691 seconds .
+  Time since last request: 0.000492 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/glass.mat
+  artifactKey: Guid(0c55d4ae09569a04e90ec2e1f9e814f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/glass.mat using Guid(0c55d4ae09569a04e90ec2e1f9e814f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5433a9950250f8b917813ec55a441f2a') in 0.151478 seconds
+  Import took 0.154332 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Sound Pack Free Edition/buy_02.wav
-  artifactKey: Guid(b9703806690cb49a58ab182032cad276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound Pack Free Edition/buy_02.wav using Guid(b9703806690cb49a58ab182032cad276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b46efe86006f8180796051c9139a17') in 0.037191 seconds
-  Import took 0.041476 seconds .
+  Time since last request: 0.000436 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/floor.mat
+  artifactKey: Guid(ce10802fb73da18439a79c6d38bc6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/floor.mat using Guid(ce10802fb73da18439a79c6d38bc6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00dbd8beac0baf114136c7c710de425c') in 0.015435 seconds
+  Import took 0.017892 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Sound Pack Free Edition/time_01.wav
-  artifactKey: Guid(25675f8572f8c4fc7aa53b3b4416f986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound Pack Free Edition/time_01.wav using Guid(25675f8572f8c4fc7aa53b3b4416f986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce72432a0b580613cf2a8b2bd74a2d5') in 0.042188 seconds
-  Import took 0.047064 seconds .
+  Time since last request: 0.000384 seconds.
+  path: Assets/Furniture_ges1/kiti/Materials/floor.mat
+  artifactKey: Guid(5b5e6b42a30a82e449fd787865b58a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/kiti/Materials/floor.mat using Guid(5b5e6b42a30a82e449fd787865b58a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1592c4db01e51d1745d5fd0393a2be4c') in 0.015154 seconds
+  Import took 0.017253 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 416.729445 seconds.
-  path: Assets/Game_music
-  artifactKey: Guid(ab208ff7deb2a8a4baa608905d92a565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music using Guid(ab208ff7deb2a8a4baa608905d92a565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfed2a5fb518683127a1104c88b70d99') in 0.005550 seconds
-  Import took 0.009391 seconds .
+  Time since last request: 0.000348 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/fonas1.mat
+  artifactKey: Guid(c50b7926dfc877a4181e893febe49a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/fonas1.mat using Guid(c50b7926dfc877a4181e893febe49a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c7b561fd59e3ff1e5a64a04ae6b0eb') in 0.025729 seconds
+  Import took 0.028021 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.010412 seconds.
-  path: Assets/Game_music
-  artifactKey: Guid(ab208ff7deb2a8a4baa608905d92a565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music using Guid(ab208ff7deb2a8a4baa608905d92a565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfed2a5fb518683127a1104c88b70d99') in 0.004750 seconds
-  Import took 0.007598 seconds .
+  Time since last request: 0.000463 seconds.
+  path: Assets/Models/Key/Models/Key_iron_mat.mat
+  artifactKey: Guid(0275cd71d48a28e4ca8d99d740827a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Key/Models/Key_iron_mat.mat using Guid(0275cd71d48a28e4ca8d99d740827a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80cdcdd2319531440a1ea53585639d30') in 0.018243 seconds
+  Import took 0.020775 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.039572 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (1).mp3
-  artifactKey: Guid(3c170c9096ba3bd4c8283600069713f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (1).mp3 using Guid(3c170c9096ba3bd4c8283600069713f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678872eb3c3f417873d25372f584e629') in 0.021260 seconds
-  Import took 0.024556 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000616 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (30).mp3
-  artifactKey: Guid(7bfbb5f514fc403418bcc6c931c1ac72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (30).mp3 using Guid(7bfbb5f514fc403418bcc6c931c1ac72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbcaed3189d913f7a9571236eed6423') in 0.014756 seconds
-  Import took 0.016974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (8).mp3
-  artifactKey: Guid(5ecacb1d89ff2e940969b46fb071cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (8).mp3 using Guid(5ecacb1d89ff2e940969b46fb071cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b59242a2118893eb03f801ddc2d5d435') in 0.015332 seconds
-  Import took 0.021073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000379 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (9).mp3
-  artifactKey: Guid(d65707d0dde556441b074e7e98afff15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (9).mp3 using Guid(d65707d0dde556441b074e7e98afff15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a914b942333c532d0922dd4f36db2da3') in 0.013979 seconds
-  Import took 0.017403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000438 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (3).mp3
-  artifactKey: Guid(bd1da6d3b747c154c81af2111651248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (3).mp3 using Guid(bd1da6d3b747c154c81af2111651248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30049677f35a337acdb393f235882a64') in 0.017266 seconds
-  Import took 0.020356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (19).mp3
-  artifactKey: Guid(f905b2e0cde208848b9175d5fb96d12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (19).mp3 using Guid(f905b2e0cde208848b9175d5fb96d12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bcf31e6945f66c259183eb1a694a8c') in 0.014344 seconds
-  Import took 0.017626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (18).mp3
-  artifactKey: Guid(ca4c218175e038643a61d49b953bfceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (18).mp3 using Guid(ca4c218175e038643a61d49b953bfceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d386087002a6658cdd7cda7d33b673d') in 0.015338 seconds
-  Import took 0.018379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000587 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (36).mp3
-  artifactKey: Guid(0abd1b46f559d534b9ecf345dc1b3e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (36).mp3 using Guid(0abd1b46f559d534b9ecf345dc1b3e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b054658a2755df07bbefae55758ce58f') in 0.014682 seconds
-  Import took 0.017087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (40).mp3
-  artifactKey: Guid(90770506cbe244b4892aa112873c7233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (40).mp3 using Guid(90770506cbe244b4892aa112873c7233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6770d889c793152e1d59df5ce7f1b956') in 0.015585 seconds
-  Import took 0.019203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001426 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (7).mp3
-  artifactKey: Guid(879d0beef8d775e4c856720ff6d955b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (7).mp3 using Guid(879d0beef8d775e4c856720ff6d955b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bdf224f765bffb02caa0f9c591019a') in 0.019127 seconds
-  Import took 0.022985 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (27).mp3
-  artifactKey: Guid(e7cfb4d9a5d46bb4d88d914cfe3c5030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (27).mp3 using Guid(e7cfb4d9a5d46bb4d88d914cfe3c5030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0432e2ff5e474ed01c1da9f55109dc') in 0.014895 seconds
-  Import took 0.017838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000972 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (31).mp3
-  artifactKey: Guid(ea0df3c3884da4b47b409b6e1e30d3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (31).mp3 using Guid(ea0df3c3884da4b47b409b6e1e30d3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1bca9c520668ce5b6a7eeca545a8ae') in 0.015493 seconds
-  Import took 0.018395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (17).mp3
-  artifactKey: Guid(2285b62fe0e90d045976e2f3248a5016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (17).mp3 using Guid(2285b62fe0e90d045976e2f3248a5016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e5474bdc95117be6d0cfb84cea2e7e') in 0.018828 seconds
-  Import took 0.023419 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (24).mp3
-  artifactKey: Guid(d1c87f15cecb03c43b7d66eeba2c70ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (24).mp3 using Guid(d1c87f15cecb03c43b7d66eeba2c70ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d002ac3b2aba472cc7d9e1f15ecd4e') in 0.013622 seconds
-  Import took 0.016105 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (32).mp3
-  artifactKey: Guid(9e748a4de002c8a4aa5c5dc4b7a8dee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (32).mp3 using Guid(9e748a4de002c8a4aa5c5dc4b7a8dee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634fb6eacf6426406e2d21ca82952580') in 0.015664 seconds
-  Import took 0.018809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (20).mp3
-  artifactKey: Guid(3a9243c6ebcabb44d91738aa56c997c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (20).mp3 using Guid(3a9243c6ebcabb44d91738aa56c997c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b802e795e10adbd6e17e94b8e28c245') in 0.014975 seconds
-  Import took 0.017534 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (14).mp3
-  artifactKey: Guid(ee60a79c5c5424e45813c06e6e315f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (14).mp3 using Guid(ee60a79c5c5424e45813c06e6e315f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a682cac6428a3842fa4b5f2dda3e40') in 0.016642 seconds
-  Import took 0.019397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (41).mp3
-  artifactKey: Guid(986ceecf11ffd0e4a8676b4ccfaaaedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (41).mp3 using Guid(986ceecf11ffd0e4a8676b4ccfaaaedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5c7f57a1fcf52d98cf295131171aea') in 0.014894 seconds
-  Import took 0.018427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (37).mp3
-  artifactKey: Guid(d834da361ac718f40a50b9b24eff160b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (37).mp3 using Guid(d834da361ac718f40a50b9b24eff160b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88f1ca8f903280e8aa3f79f6716a59c') in 0.014635 seconds
-  Import took 0.017710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (13).mp3
-  artifactKey: Guid(58ceb12f5a5c3114089789a111f60758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (13).mp3 using Guid(58ceb12f5a5c3114089789a111f60758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a24469ec90a8d5979635f58987011d4') in 0.016380 seconds
-  Import took 0.021352 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (23).mp3
-  artifactKey: Guid(a1cda9c0bacea924d8763c7353b70434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (23).mp3 using Guid(a1cda9c0bacea924d8763c7353b70434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b173d4d329e3296d556a4f6d1a635c') in 0.016153 seconds
-  Import took 0.018918 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (26).mp3
-  artifactKey: Guid(76844c483972f254abd50b49c99a6bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (26).mp3 using Guid(76844c483972f254abd50b49c99a6bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a455ac2395ebe74fa5edc7f36daa8d') in 0.017534 seconds
-  Import took 0.021194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (11).mp3
-  artifactKey: Guid(34394f556e8b02e4185d357ff6ab6f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (11).mp3 using Guid(34394f556e8b02e4185d357ff6ab6f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac0cd9261a56b6b5cc9a51a2265a5a2') in 0.015890 seconds
-  Import took 0.018731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (28).mp3
-  artifactKey: Guid(c1f8eca4a80b8f54289cb229d0fc6f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (28).mp3 using Guid(c1f8eca4a80b8f54289cb229d0fc6f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04350cefdeb211bfa783f1d210b0f536') in 0.015472 seconds
-  Import took 0.018349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000575 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (38).mp3
-  artifactKey: Guid(e302709325de49546992473a8a8939fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (38).mp3 using Guid(e302709325de49546992473a8a8939fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d77647c3468ff89a787a02972714381') in 0.013745 seconds
-  Import took 0.019091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000516 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (34).mp3
-  artifactKey: Guid(98baec781d46fe8439cf133cc4f807ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (34).mp3 using Guid(98baec781d46fe8439cf133cc4f807ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e7f5a97588ffe8a40a7d46e05b9376') in 0.015516 seconds
-  Import took 0.018479 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (22).mp3
-  artifactKey: Guid(da3ec65ab1e53aa4ab9ef41e7cb747b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (22).mp3 using Guid(da3ec65ab1e53aa4ab9ef41e7cb747b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9fcc26981ff416b35d13b9ebea324a') in 0.017063 seconds
-  Import took 0.019841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (33).mp3
-  artifactKey: Guid(7f02baf9ae301f24d9f4a8f5d4f1feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (33).mp3 using Guid(7f02baf9ae301f24d9f4a8f5d4f1feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb30376f7776f19e38fb89437b3d0e7e') in 0.013432 seconds
-  Import took 0.017422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (10).mp3
-  artifactKey: Guid(97f5a65dda474424587cc414c6de95e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (10).mp3 using Guid(97f5a65dda474424587cc414c6de95e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2f39fe09a9f1ccf822229c79033ade') in 0.016773 seconds
-  Import took 0.019980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (16).mp3
-  artifactKey: Guid(33f6c71960b53e0449a5cc5c7643195f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (16).mp3 using Guid(33f6c71960b53e0449a5cc5c7643195f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98e288c65fc92049b47c9dbef34a747') in 0.014427 seconds
-  Import took 0.017503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (6).mp3
-  artifactKey: Guid(2ca9dfc5c87541540b731dc34bfc7bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (6).mp3 using Guid(2ca9dfc5c87541540b731dc34bfc7bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f641e5731582ab92d1d4812a146ce824') in 0.015219 seconds
-  Import took 0.017786 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (2).mp3
-  artifactKey: Guid(051168dd3f18b614cb273426a6521fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (2).mp3 using Guid(051168dd3f18b614cb273426a6521fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8f5f66210960d43e758ec42bd20f916') in 0.013005 seconds
-  Import took 0.019102 seconds .
+  Time since last request: 0.000375 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc12370d87fc4540366a8610b4e63f1c') in 0.041207 seconds
+  Import took 0.043409 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000434 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (5).mp3
-  artifactKey: Guid(cba2538823e42d74ba4b921713d27f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (5).mp3 using Guid(cba2538823e42d74ba4b921713d27f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f295585e44ee0fa46e552b80170fb5d6') in 0.016551 seconds
-  Import took 0.020179 seconds .
+  path: Assets/Flames Of The Phoenix/Materials/Fire_Texture_LongAnimation.mat
+  artifactKey: Guid(814bb5e9d2592c445942068823e4b42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flames Of The Phoenix/Materials/Fire_Texture_LongAnimation.mat using Guid(814bb5e9d2592c445942068823e4b42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b69534ef6fa4227b4a5c2bdbaa1701') in 0.019408 seconds
+  Import took 0.021544 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (21).mp3
-  artifactKey: Guid(30dd1c9e0f80b8c41a66e325c4f6884f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (21).mp3 using Guid(30dd1c9e0f80b8c41a66e325c4f6884f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a712e27acd5c242bcb86fbf11aa73527') in 0.014030 seconds
-  Import took 0.016591 seconds .
+  Time since last request: 0.000337 seconds.
+  path: Assets/MedievalTavernPack/Material/Architecture/Fireplace_02_stone.mat
+  artifactKey: Guid(7e91e8346e8449544b8aaf17bd477f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MedievalTavernPack/Material/Architecture/Fireplace_02_stone.mat using Guid(7e91e8346e8449544b8aaf17bd477f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14ece50712f345bcaf7cb89f9f7d35c') in 0.051548 seconds
+  Import took 0.054379 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (12).mp3
-  artifactKey: Guid(bf4a18bbbc1f9514682bd2a62ad53542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (12).mp3 using Guid(bf4a18bbbc1f9514682bd2a62ad53542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1712708e1b758ee8d04852a080fba31') in 0.015239 seconds
-  Import took 0.017916 seconds .
+  Time since last request: 3.191048 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9e6bb39492706ad6c83ad05a3ded2e') in 0.036423 seconds
+  Import took 0.039124 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (25).mp3
-  artifactKey: Guid(e3362000d27399941bbe6e7597df97da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (25).mp3 using Guid(e3362000d27399941bbe6e7597df97da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d79e4113dcb6b13f02ddd1ed296c74') in 0.014856 seconds
-  Import took 0.018178 seconds .
+  Time since last request: 0.000472 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6514d827ebcad637827bdbfa9a842301') in 0.127463 seconds
+  Import took 0.131000 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (29).mp3
-  artifactKey: Guid(6641a9d668e08894a931691116833caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (29).mp3 using Guid(6641a9d668e08894a931691116833caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c29334a2040f8433d467891e7bd9d8') in 0.014334 seconds
-  Import took 0.017634 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (35).mp3
-  artifactKey: Guid(7e8e92f7c31a4a74f9d5d88070b3dbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (35).mp3 using Guid(7e8e92f7c31a4a74f9d5d88070b3dbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b357c4cf30b374334c6b7b92d3efd1ab') in 0.016361 seconds
-  Import took 0.018805 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (4).mp3
-  artifactKey: Guid(e0042aeb89a628345b0f0ebabb4db95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (4).mp3 using Guid(e0042aeb89a628345b0f0ebabb4db95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c884a3a9cc422e1e300d9f342e99ba') in 0.014796 seconds
-  Import took 0.020529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000474 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (39).mp3
-  artifactKey: Guid(55d4633165ab2e14585a6583320876a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (39).mp3 using Guid(55d4633165ab2e14585a6583320876a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6abce50861d37510b202c18a7b0edb') in 0.015514 seconds
-  Import took 0.018924 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Game_music/With love from Vertex Studio (15).mp3
-  artifactKey: Guid(10a153a980c722242990266d3843b998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game_music/With love from Vertex Studio (15).mp3 using Guid(10a153a980c722242990266d3843b998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ddd4142fe4f66afb3f84ac498dde152') in 0.016397 seconds
-  Import took 0.019353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1223.911529 seconds.
-  path: Assets/Free Ambient Instrumental Music/1Strings
-  artifactKey: Guid(ed80cc2ffe89ae94db2eee08836ca3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/1Strings using Guid(ed80cc2ffe89ae94db2eee08836ca3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402f035b4ca4efdf86ccdfffe039919a') in 0.007255 seconds
-  Import took 0.010312 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.033268 seconds.
-  path: Assets/Free Ambient Instrumental Music/1Strings
-  artifactKey: Guid(ed80cc2ffe89ae94db2eee08836ca3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/1Strings using Guid(ed80cc2ffe89ae94db2eee08836ca3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402f035b4ca4efdf86ccdfffe039919a') in 0.004668 seconds
-  Import took 0.007433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012722 seconds.
-  path: Assets/Free Ambient Instrumental Music/1Strings/Strings.wav
-  artifactKey: Guid(b4e03b819912ca746b68c6610bd537b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/1Strings/Strings.wav using Guid(b4e03b819912ca746b68c6610bd537b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cb1fbbae87ccec25f6ebed306db7c4') in 0.020881 seconds
-  Import took 0.023452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/Free Ambient Instrumental Music/1Strings/Strings1.wav
-  artifactKey: Guid(631b1702899f12f4787890ce6c4912b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/1Strings/Strings1.wav using Guid(631b1702899f12f4787890ce6c4912b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '719ed3aa4f7b9d42493b1dbe1365403e') in 0.014115 seconds
-  Import took 0.016612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Free Ambient Instrumental Music/1Strings/Strings2.wav
-  artifactKey: Guid(603001d590a40ff468c947f3c96a4ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/1Strings/Strings2.wav using Guid(603001d590a40ff468c947f3c96a4ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f837ffd67e1f8a6877edd5b8683296cb') in 0.015134 seconds
-  Import took 0.020292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000454 seconds.
-  path: Assets/Free Ambient Instrumental Music/1Strings/Strings3.wav
-  artifactKey: Guid(a98a2050900001c4682a518b5c3fd5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/1Strings/Strings3.wav using Guid(a98a2050900001c4682a518b5c3fd5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c634dfbee2594ebd7cc5b9ac1143e37') in 0.015624 seconds
-  Import took 0.019072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.638932 seconds.
-  path: Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds.wav
-  artifactKey: Guid(fb00ea2db68b94943a2537f68df56678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds.wav using Guid(fb00ea2db68b94943a2537f68df56678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a635a492d09b0719071a7dc9ece6df0b') in 0.013015 seconds
-  Import took 0.016358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds3.wav
-  artifactKey: Guid(c68403026d884774d85edda580b3f64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds3.wav using Guid(c68403026d884774d85edda580b3f64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e42ef27827c73afcd9d63a57d0029f2') in 0.014415 seconds
-  Import took 0.017074 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds2.wav
-  artifactKey: Guid(5dc83e7b35f0c844d8facfb119a92514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds2.wav using Guid(5dc83e7b35f0c844d8facfb119a92514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d9f3e80d25ad66f9d2f689128e62edc') in 0.017331 seconds
-  Import took 0.020507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000382 seconds.
-  path: Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds4.wav
-  artifactKey: Guid(039ad8366564ddb4285a35b0ecafaa1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds4.wav using Guid(039ad8366564ddb4285a35b0ecafaa1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a65a64caa587972c7303d578ea4492f') in 0.013865 seconds
-  Import took 0.016845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds1.wav
-  artifactKey: Guid(a4510a89aee278a46af3aeb1090d4314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/2Woodwinds/Woodwinds1.wav using Guid(a4510a89aee278a46af3aeb1090d4314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26e8a2f387641717319b3ee9493120e') in 0.015908 seconds
-  Import took 0.018658 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.922061 seconds.
-  path: Assets/Free Ambient Instrumental Music/3Piano/Piano.wav
-  artifactKey: Guid(caf04ce96f2fb5143b09f570ac3cd563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/3Piano/Piano.wav using Guid(caf04ce96f2fb5143b09f570ac3cd563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaede5ca919d289f5a1c3ecda7e67e68') in 0.012132 seconds
-  Import took 0.016476 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Free Ambient Instrumental Music/3Piano/Piano4.wav
-  artifactKey: Guid(adbb8769396311c439a773d4679dca13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/3Piano/Piano4.wav using Guid(adbb8769396311c439a773d4679dca13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59cbce3fd7ea022feb15413f4c154a96') in 0.012571 seconds
-  Import took 0.016925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000473 seconds.
-  path: Assets/Free Ambient Instrumental Music/3Piano/Piano1.wav
-  artifactKey: Guid(537f9e2b44abc864b9038be47416abbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/3Piano/Piano1.wav using Guid(537f9e2b44abc864b9038be47416abbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3e12407ee7c3aaa3e68b9ea05a581e') in 0.019655 seconds
-  Import took 0.023205 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/Free Ambient Instrumental Music/3Piano/Piano2.wav
-  artifactKey: Guid(824f33afe798f2842ae31de52ce5dea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/3Piano/Piano2.wav using Guid(824f33afe798f2842ae31de52ce5dea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1776c2f52b99b28ee6378bede044600') in 0.014012 seconds
-  Import took 0.017893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/Free Ambient Instrumental Music/3Piano/Piano5.wav
-  artifactKey: Guid(52e62089777204e4d87d2edeaf2ef836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/3Piano/Piano5.wav using Guid(52e62089777204e4d87d2edeaf2ef836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d84d2f04d2e8955c90695ab2651bf10') in 0.014337 seconds
-  Import took 0.017007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/Free Ambient Instrumental Music/3Piano/Piano3.wav
-  artifactKey: Guid(d06561493678fea4f8cb936d5905277d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/3Piano/Piano3.wav using Guid(d06561493678fea4f8cb936d5905277d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f3f1e883203b5ecd906d4aad5af190') in 0.014189 seconds
-  Import took 0.017723 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 90.701034 seconds.
-  path: Assets/Free Ambient Instrumental Music/Harp/Harp.wav
-  artifactKey: Guid(11b09517fdaa84e4484afe4d3ea847f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/Harp/Harp.wav using Guid(11b09517fdaa84e4484afe4d3ea847f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63f2d3fa2a78bd47c168008b45c756e') in 0.014144 seconds
-  Import took 0.016734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Free Ambient Instrumental Music/Harp/Harp1.wav
-  artifactKey: Guid(79667ccf5dba62c4dbee562e6bec6f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/Harp/Harp1.wav using Guid(79667ccf5dba62c4dbee562e6bec6f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872d02b76f178e72a5249a7e5c2bbbb2') in 0.014847 seconds
-  Import took 0.017797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/Free Ambient Instrumental Music/Harp/Harp2.wav
-  artifactKey: Guid(48ea6c42dac01d64e9ef2a2aec245c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Ambient Instrumental Music/Harp/Harp2.wav using Guid(48ea6c42dac01d64e9ef2a2aec245c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61ab2c31fc23c459ad0ee8bcd8d36bbb') in 0.015226 seconds
-  Import took 0.018965 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2090.941845 seconds.
-  path: Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 3s.wav
-  artifactKey: Guid(b057cb9354fd4466a8cb7c919d51ed8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 3s.wav using Guid(b057cb9354fd4466a8cb7c919d51ed8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b09b2a4b87305fc7b089d846d15be31') in 0.028816 seconds
-  Import took 0.036525 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min LOOP Vs.wav
-  artifactKey: Guid(718fe8c6277184a01bed0b783b53802e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min LOOP Vs.wav using Guid(718fe8c6277184a01bed0b783b53802e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8c008b8d93ef0f3bf42b39c4a1b11a') in 0.015785 seconds
-  Import took 0.018159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000572 seconds.
-  path: Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 15s.wav
-  artifactKey: Guid(18fb2659764e64885aaa6bef48b93734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 15s.wav using Guid(18fb2659764e64885aaa6bef48b93734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac7ce4dff66c7941d3b1344636695ef5') in 0.061159 seconds
-  Import took 0.064876 seconds .
+  Time since last request: 0.000442 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9e6bb39492706ad6c83ad05a3ded2e') in 0.039386 seconds
+  Import took 0.042242 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000381 seconds.
-  path: Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 27s.wav
-  artifactKey: Guid(0ce1298c28bb0430f966eb8e4e7eb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 27s.wav using Guid(0ce1298c28bb0430f966eb8e4e7eb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e5a777d9995618147a4f9e44c4fa8f7') in 0.019281 seconds
-  Import took 0.023148 seconds .
+  path: Assets/Furniture_ges1/interior/Materials/Material #35.mat
+  artifactKey: Guid(c421f6023c85c174bb30a1fcf090af7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/Material #35.mat using Guid(c421f6023c85c174bb30a1fcf090af7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3d18d8f83dd887d35acd448adb6a78') in 0.014153 seconds
+  Import took 0.016897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03a7cf1dff67dd3cbb5a731771c49fb6') in 0.061698 seconds
+  Import took 0.065928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.159047 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/Material #47.mat
+  artifactKey: Guid(0646241ed45a4584496c9f961b9fc144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/Material #47.mat using Guid(0646241ed45a4584496c9f961b9fc144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f14c388775cc21bf72f63abdd396d87') in 0.015905 seconds
+  Import took 0.018873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.180578 seconds.
+  path: Assets/Mugs, Bowls and Plates/Models/Materials/mug01.mat
+  artifactKey: Guid(4aedf822205248740998f76b3366dfc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mugs, Bowls and Plates/Models/Materials/mug01.mat using Guid(4aedf822205248740998f76b3366dfc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38af30c37fbecfb7276ca08d72f747e7') in 0.041804 seconds
+  Import took 0.044319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Mugs, Bowls and Plates/Models/Materials/mug02.mat
+  artifactKey: Guid(51dd31446ec8d1e48b28bd161e5d9f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mugs, Bowls and Plates/Models/Materials/mug02.mat using Guid(51dd31446ec8d1e48b28bd161e5d9f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee61dbbbe93b5d363b1976e008e4a829') in 0.034085 seconds
+  Import took 0.037370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074114 seconds.
+  path: Assets/Mugs, Bowls and Plates/Models/Materials/mug03.mat
+  artifactKey: Guid(c94f7b7a8f544114ab98802e8b4b23a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mugs, Bowls and Plates/Models/Materials/mug03.mat using Guid(c94f7b7a8f544114ab98802e8b4b23a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229df0a1ca995c7637692e6baa26b3ae') in 0.036088 seconds
+  Import took 0.038515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/okno.mat
+  artifactKey: Guid(430f0e4de0a4f814c9e18f04833b5771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/okno.mat using Guid(430f0e4de0a4f814c9e18f04833b5771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5912fdff8dc956ea9f571a72c88db9b7') in 0.015498 seconds
+  Import took 0.018199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.519761 seconds.
+  path: Assets/Classic Picture Frame/Materials/picture_ao.mat
+  artifactKey: Guid(e398e4bfbbe8d754cb4e8b9517a036d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Classic Picture Frame/Materials/picture_ao.mat using Guid(e398e4bfbbe8d754cb4e8b9517a036d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4ce2286b2228ad18dee01ddb7909c9') in 0.017362 seconds
+  Import took 0.019512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Classic Picture Frame/Materials/picture_d.mat
+  artifactKey: Guid(4ec482194317c9840bc135e8350a5ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Classic Picture Frame/Materials/picture_d.mat using Guid(4ec482194317c9840bc135e8350a5ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12336ea9da292bd8d41006817006f414') in 0.016802 seconds
+  Import took 0.018968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/Classic Picture Frame/Materials/picture_n.mat
+  artifactKey: Guid(f44a4431aa6e421469e682c9c1414cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Classic Picture Frame/Materials/picture_n.mat using Guid(f44a4431aa6e421469e682c9c1414cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8c28db9e2d79c03ed6dfac4fd8ed7d') in 0.020089 seconds
+  Import took 0.023402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.487178 seconds.
+  path: Assets/Classic Picture Frame/Materials/picture_s.mat
+  artifactKey: Guid(a03a2ecda8cafee499acbeaa4d1d1195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Classic Picture Frame/Materials/picture_s.mat using Guid(a03a2ecda8cafee499acbeaa4d1d1195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12aafeaa02a9b81aeecf7f1a811ce0b2') in 0.026609 seconds
+  Import took 0.028827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Mugs, Bowls and Plates/Models/Materials/plate01.mat
+  artifactKey: Guid(a8713dc11dd3b4049b3c7828cf6d5820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mugs, Bowls and Plates/Models/Materials/plate01.mat using Guid(a8713dc11dd3b4049b3c7828cf6d5820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b075f97561d7664a062ecae8cc7a497f') in 0.032776 seconds
+  Import took 0.035763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.225266 seconds.
+  path: Assets/Mugs, Bowls and Plates/Models/Materials/plate02.mat
+  artifactKey: Guid(978bbcf9abdfc404fa538fba9a668ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mugs, Bowls and Plates/Models/Materials/plate02.mat using Guid(978bbcf9abdfc404fa538fba9a668ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f723f0ace578da26bad7aaca69ed89') in 0.032349 seconds
+  Import took 0.034807 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000324 seconds.
-  path: Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 3s.wav
-  artifactKey: Guid(b057cb9354fd4466a8cb7c919d51ed8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backing Track - SD Sound Tracks/Fun & Games - 1min 3s.wav using Guid(b057cb9354fd4466a8cb7c919d51ed8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b09b2a4b87305fc7b089d846d15be31') in 0.013429 seconds
-  Import took 0.016245 seconds .
+  path: Assets/Mugs, Bowls and Plates/Models/Materials/plate03.mat
+  artifactKey: Guid(aef25ea260dab4b4eb3a8d474748355a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mugs, Bowls and Plates/Models/Materials/plate03.mat using Guid(aef25ea260dab4b4eb3a8d474748355a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd609667ea9432661732b97555eed0896') in 0.034400 seconds
+  Import took 0.037090 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 328.654662 seconds.
-  path: Assets/Happy Days/Happy Days bass ostinato.wav
-  artifactKey: Guid(5ea46ddc114814cfc9522f3d4748f61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days bass ostinato.wav using Guid(5ea46ddc114814cfc9522f3d4748f61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8df0b2ae0f9b2f634e35aeca6a3d3f8') in 0.018954 seconds
-  Import took 0.022618 seconds .
+  Time since last request: 1.808238 seconds.
+  path: Assets/Models/Key/Models/Materials/pPlane3Mat.mat
+  artifactKey: Guid(92c57a479158d64448190909e091575c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Key/Models/Materials/pPlane3Mat.mat using Guid(92c57a479158d64448190909e091575c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b547967c77f08b7db1207d55e07a88c6') in 0.015149 seconds
+  Import took 0.017357 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000525 seconds.
-  path: Assets/Happy Days/Happy Days piano ostinato.wav
-  artifactKey: Guid(b8a0225e8ba444b70be8a6d812720d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days piano ostinato.wav using Guid(b8a0225e8ba444b70be8a6d812720d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2983167fc2fb1a660cc488bec3a2e1e6') in 0.015317 seconds
-  Import took 0.018902 seconds .
+  Time since last request: 0.000345 seconds.
+  path: Assets/Furniture_ges1/printer/Materials/printer.mat
+  artifactKey: Guid(6e6ad01b38823a24f9bf58056de9efef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/printer/Materials/printer.mat using Guid(6e6ad01b38823a24f9bf58056de9efef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42ec4aae754052b2596768d45ab32d7') in 0.025106 seconds
+  Import took 0.027840 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/Happy Days/Happy Days full.wav
-  artifactKey: Guid(583b0faeba6cc40639b8ab8a9b15d948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days full.wav using Guid(583b0faeba6cc40639b8ab8a9b15d948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133b041e44410950485e00b217ecdc35') in 0.059783 seconds
-  Import took 0.064840 seconds .
+  Time since last request: 0.000389 seconds.
+  path: Assets/Models/Key/Models/Materials/pPlane3Mat.mat
+  artifactKey: Guid(92c57a479158d64448190909e091575c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Key/Models/Materials/pPlane3Mat.mat using Guid(92c57a479158d64448190909e091575c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b547967c77f08b7db1207d55e07a88c6') in 0.012842 seconds
+  Import took 0.015206 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/Happy Days/Happy Days cymbal ostinato.wav
-  artifactKey: Guid(b40a788a0ab8e4999a8201a7c7d0bcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days cymbal ostinato.wav using Guid(b40a788a0ab8e4999a8201a7c7d0bcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e5217a49e04fcab60b14ca357781d03') in 0.025771 seconds
-  Import took 0.029588 seconds .
+  Time since last request: 2.780999 seconds.
+  path: Assets/Furniture_ges1/sek/Materials/ruch.mat
+  artifactKey: Guid(b3b5395afc760c04da69a48b948d6525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/sek/Materials/ruch.mat using Guid(b3b5395afc760c04da69a48b948d6525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f2ada673181c361907bedf66cd946d') in 0.018298 seconds
+  Import took 0.021190 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000495 seconds.
-  path: Assets/Happy Days/Happy Days kalimba ostinato.wav
-  artifactKey: Guid(348f964a6251e477b9dc402d2c6a7ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days kalimba ostinato.wav using Guid(348f964a6251e477b9dc402d2c6a7ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04e9afa3179e2c0f2f3081cf59f886e') in 0.018781 seconds
-  Import took 0.021290 seconds .
+  Time since last request: 0.000538 seconds.
+  path: Assets/Furniture_ges1/screen/Materials/screen.mat
+  artifactKey: Guid(a0ac5b90895077743a3196de11276987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/screen/Materials/screen.mat using Guid(a0ac5b90895077743a3196de11276987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fcef6d663f2586b0404fd4f557dc1c7') in 0.032579 seconds
+  Import took 0.035346 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000433 seconds.
-  path: Assets/Happy Days/Happy Days drum ostinato.wav
-  artifactKey: Guid(b9b57605da89e442aa265e4497eb95cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days drum ostinato.wav using Guid(b9b57605da89e442aa265e4497eb95cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '737611fea850c5d0058090b4d6f1cb30') in 0.017233 seconds
-  Import took 0.022408 seconds .
+  Time since last request: 0.334056 seconds.
+  path: Assets/Furniture_ges1/sek/Materials/sek1.mat
+  artifactKey: Guid(26021274ef3a7314b9f0df5fc9678ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/sek/Materials/sek1.mat using Guid(26021274ef3a7314b9f0df5fc9678ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1f21c35a2f733fe0d223f329e13815') in 0.021598 seconds
+  Import took 0.024718 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/Happy Days/Happy Days no drums and bass.wav
-  artifactKey: Guid(e5f8eac0ba3fb4ab3b1b78824958fa34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days no drums and bass.wav using Guid(e5f8eac0ba3fb4ab3b1b78824958fa34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89976272026c9bc626ea453adf7062f') in 0.015957 seconds
-  Import took 0.019013 seconds .
+  Time since last request: 0.000476 seconds.
+  path: Assets/Furniture_ges1/sek/Materials/sek2.mat
+  artifactKey: Guid(4eb757cb0fc539d4f87bfe06c2a35c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/sek/Materials/sek2.mat using Guid(4eb757cb0fc539d4f87bfe06c2a35c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb3614c277c748d24d05c97000e7035') in 0.027790 seconds
+  Import took 0.030937 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Happy Days/Happy Days drums bass and piano only.wav
-  artifactKey: Guid(cc5c5f99da28d4035924318220b680a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days drums bass and piano only.wav using Guid(cc5c5f99da28d4035924318220b680a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff4c67dcae8b2fa7fb348a97f59bc6d') in 0.018160 seconds
-  Import took 0.022673 seconds .
+  Time since last request: 0.199611 seconds.
+  path: Assets/Materials/Materials/Shadow_Foto2.mat
+  artifactKey: Guid(8f1fdaabbd32ce647a564afefffe0d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Materials/Shadow_Foto2.mat using Guid(8f1fdaabbd32ce647a564afefffe0d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb13f928c3f0da625d8d99bd3c63c3a') in 0.013820 seconds
+  Import took 0.016405 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/Happy Days/Happy Days celesta ostinato.wav
-  artifactKey: Guid(1e58f4aae685f41e8ac462af96597e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Happy Days/Happy Days celesta ostinato.wav using Guid(1e58f4aae685f41e8ac462af96597e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798e439414e9a6a9d0f816c04892a664') in 0.016912 seconds
-  Import took 0.021839 seconds .
+  Time since last request: 0.103188 seconds.
+  path: Assets/Furniture_ges1/Sky/sky.mat
+  artifactKey: Guid(d54615edf0dff724283f00321f5981f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/Sky/sky.mat using Guid(d54615edf0dff724283f00321f5981f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57249fd40594fb157ff80d4db55dde3') in 0.013836 seconds
+  Import took 0.016018 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 154.231469 seconds.
-  path: Assets/Free Trial Atelier Sandbox Game Music/m4a
-  artifactKey: Guid(3053126950f2743e887b7365461f75a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Trial Atelier Sandbox Game Music/m4a using Guid(3053126950f2743e887b7365461f75a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c249f458f2bc70079071e2f18d5913') in 0.007007 seconds
-  Import took 0.011747 seconds .
+  Time since last request: 0.000296 seconds.
+  path: Assets/Flames Of The Phoenix/Materials/SmokeSpriteSheet.mat
+  artifactKey: Guid(71bcd52769f990a4293cf10a2e955884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flames Of The Phoenix/Materials/SmokeSpriteSheet.mat using Guid(71bcd52769f990a4293cf10a2e955884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fcf18fae8568ed3d1c0adbbbcb497f4') in 0.056288 seconds
+  Import took 0.058657 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.031105 seconds.
-  path: Assets/Free Trial Atelier Sandbox Game Music/m4a
-  artifactKey: Guid(3053126950f2743e887b7365461f75a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Trial Atelier Sandbox Game Music/m4a using Guid(3053126950f2743e887b7365461f75a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c249f458f2bc70079071e2f18d5913') in 0.005844 seconds
-  Import took 0.008619 seconds .
+  Time since last request: 0.000318 seconds.
+  path: Assets/Flames Of The Phoenix/Materials/Smoke_Material_ShortAnimation.mat
+  artifactKey: Guid(345486b6bcaacd44da1ca50e023d264f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flames Of The Phoenix/Materials/Smoke_Material_ShortAnimation.mat using Guid(345486b6bcaacd44da1ca50e023d264f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b199dff211fff1e66effbecddd9443c5') in 0.021707 seconds
+  Import took 0.024452 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.914932 seconds.
-  path: Assets/Free Trial Atelier Sandbox Game Music/wav
-  artifactKey: Guid(59924a829de0c4b128d2285d4a3a086a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Trial Atelier Sandbox Game Music/wav using Guid(59924a829de0c4b128d2285d4a3a086a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6811c8ce88e3e8891e65f7f7f06552e') in 0.007289 seconds
-  Import took 0.010298 seconds .
+  Time since last request: 0.041413 seconds.
+  path: Assets/Furniture_ges1/speaker/Materials/speaker.mat
+  artifactKey: Guid(da10c0ded77b4284e9101c1ef05e3f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/speaker/Materials/speaker.mat using Guid(da10c0ded77b4284e9101c1ef05e3f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba298b6e3f07cac08026f7f3573685b1') in 0.016744 seconds
+  Import took 0.019116 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.011109 seconds.
-  path: Assets/Free Trial Atelier Sandbox Game Music/wav
-  artifactKey: Guid(59924a829de0c4b128d2285d4a3a086a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Trial Atelier Sandbox Game Music/wav using Guid(59924a829de0c4b128d2285d4a3a086a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6811c8ce88e3e8891e65f7f7f06552e') in 0.005104 seconds
-  Import took 0.008132 seconds .
+  Time since last request: 0.000577 seconds.
+  path: Assets/Furniture_ges1/tumba_fur/Materials/tumba_texture.mat
+  artifactKey: Guid(809a31aaed7d3364eab636c8a903e622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/tumba_fur/Materials/tumba_texture.mat using Guid(809a31aaed7d3364eab636c8a903e622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f15f31a560bbd6c281afada8e31c4f') in 0.019400 seconds
+  Import took 0.023415 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.050972 seconds.
-  path: Assets/Free Trial Atelier Sandbox Game Music/wav/07 Stay with you.wav
-  artifactKey: Guid(c4283347a047f4ababe2a6f5af98fcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Trial Atelier Sandbox Game Music/wav/07 Stay with you.wav using Guid(c4283347a047f4ababe2a6f5af98fcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bfffdada8b691dd5187865adfd9594a') in 0.025701 seconds
-  Import took 0.029028 seconds .
+  Time since last request: 0.000432 seconds.
+  path: Assets/Furniture_ges1/lens/Materials/texture.mat
+  artifactKey: Guid(9aca3cac790e78f49aa255c2efa10daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/lens/Materials/texture.mat using Guid(9aca3cac790e78f49aa255c2efa10daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a35e1af1135901cd04d68f41f673ad') in 0.015154 seconds
+  Import took 0.017453 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 35.478339 seconds.
-  path: Assets/Free Trial Atelier Sandbox Game Music/ogg/07 Stay with you.ogg
-  artifactKey: Guid(7d8ff13a1adcb49c584fab9decb97fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Trial Atelier Sandbox Game Music/ogg/07 Stay with you.ogg using Guid(7d8ff13a1adcb49c584fab9decb97fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022e99c27b60b3f5ce2663684cb51190') in 0.047585 seconds
-  Import took 0.051534 seconds .
+  Time since last request: 3.126420 seconds.
+  path: Assets/Furniture_ges1/tv/Materials/tv_tex.mat
+  artifactKey: Guid(eb523bd2fd654e74d9674bc7998f223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/tv/Materials/tv_tex.mat using Guid(eb523bd2fd654e74d9674bc7998f223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6beecf5bf3e8a13bb649b43cea9dd6') in 0.023670 seconds
+  Import took 0.026104 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.714522 seconds.
-  path: Assets/Classic Picture Frame/picture.FBX
-  artifactKey: Guid(fe8232f2d2f3aff44a1c3b3b1b841658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Classic Picture Frame/picture.FBX using Guid(fe8232f2d2f3aff44a1c3b3b1b841658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e469520fa1907481cffab58dc470d4') in 0.226873 seconds
-  Import took 0.230501 seconds .
+  Time since last request: 0.000358 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/up.mat
+  artifactKey: Guid(db3b42d38dcb41147b9a270dec49a21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/up.mat using Guid(db3b42d38dcb41147b9a270dec49a21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b506dd85d96768811eeb7abd18334e5a') in 0.014836 seconds
+  Import took 0.016955 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Classic Picture Frame/picture.prefab
-  artifactKey: Guid(14691c451e07ff94cb94be3f44e72ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Classic Picture Frame/picture.prefab using Guid(14691c451e07ff94cb94be3f44e72ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38068c33bd80f9f3edf00a75cdc5c68f') in 0.159307 seconds
-  Import took 0.162888 seconds .
+  Time since last request: 0.000388 seconds.
+  path: Assets/Furniture_ges1/tv/Materials/tv_tex.mat
+  artifactKey: Guid(eb523bd2fd654e74d9674bc7998f223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/tv/Materials/tv_tex.mat using Guid(eb523bd2fd654e74d9674bc7998f223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6beecf5bf3e8a13bb649b43cea9dd6') in 0.020399 seconds
+  Import took 0.023072 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000410 seconds.
-  path: Assets/Classic Picture Frame/picture.mat
-  artifactKey: Guid(a3a0af71dcd0e7f4e9a462398ffce63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Classic Picture Frame/picture.mat using Guid(a3a0af71dcd0e7f4e9a462398ffce63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fbc5cc4b05a6946944976243b1e436') in 0.151747 seconds
-  Import took 0.154667 seconds .
+  Time since last request: 0.000493 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/up.mat
+  artifactKey: Guid(db3b42d38dcb41147b9a270dec49a21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/up.mat using Guid(db3b42d38dcb41147b9a270dec49a21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b506dd85d96768811eeb7abd18334e5a') in 0.076051 seconds
+  Import took 0.080379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000435 seconds.
+  path: Assets/01_AssetStore/DoorPackFree/Meshes/Door001/Materials/V6.mat
+  artifactKey: Guid(0b7dd8513656d9c4fa0cbe919fb9fa8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01_AssetStore/DoorPackFree/Meshes/Door001/Materials/V6.mat using Guid(0b7dd8513656d9c4fa0cbe919fb9fa8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbc008c68384037da51d3d2e2805e14') in 0.059278 seconds
+  Import took 0.062504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/wall.mat
+  artifactKey: Guid(6481cd78347cf9143be28ea0d8e353c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/wall.mat using Guid(6481cd78347cf9143be28ea0d8e353c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6457bd6122bb18514180c3a2af74139c') in 0.016558 seconds
+  Import took 0.020779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Furniture_ges1/kiti/Materials/wall2.mat
+  artifactKey: Guid(d11b72c7d1cbeff4e8ff9794cdb5f062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/kiti/Materials/wall2.mat using Guid(d11b72c7d1cbeff4e8ff9794cdb5f062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df70947404ec78eb1d3f3dab8c6ec592') in 0.014635 seconds
+  Import took 0.017555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/Furniture_ges1/kiti/Materials/wallpaper.mat
+  artifactKey: Guid(8f35e825251e22f428131d8b214b4a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/kiti/Materials/wallpaper.mat using Guid(8f35e825251e22f428131d8b214b4a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f18efb54c1eab08654de19499216e3') in 0.019410 seconds
+  Import took 0.022032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064519 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/wallpaper.mat
+  artifactKey: Guid(1bc221fceb34586459ba6ae1ed591959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/wallpaper.mat using Guid(1bc221fceb34586459ba6ae1ed591959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16481b2e41f89659d40bd4e3ad498b1f') in 0.014201 seconds
+  Import took 0.016758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Furniture_ges1/interior/white.mat
+  artifactKey: Guid(b6385e9b7f575eb4a9fbe57f3aa1c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/white.mat using Guid(b6385e9b7f575eb4a9fbe57f3aa1c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db82c7913b6a8f4bb304f688bda834d') in 0.013629 seconds
+  Import took 0.015736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Furniture_ges1/interior/Materials/wallpaper.mat
+  artifactKey: Guid(1bc221fceb34586459ba6ae1ed591959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/Materials/wallpaper.mat using Guid(1bc221fceb34586459ba6ae1ed591959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16481b2e41f89659d40bd4e3ad498b1f') in 0.012261 seconds
+  Import took 0.014654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Furniture_ges1/interior/white.mat
+  artifactKey: Guid(b6385e9b7f575eb4a9fbe57f3aa1c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture_ges1/interior/white.mat using Guid(b6385e9b7f575eb4a9fbe57f3aa1c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db82c7913b6a8f4bb304f688bda834d') in 0.017307 seconds
+  Import took 0.020164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.411581 seconds.
+  path: Assets/Materials/Farben-Psychologie-bunt-Wirkung.jpg
+  artifactKey: Guid(c0ff5b926fcb1bd429a90edbf65e3210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Farben-Psychologie-bunt-Wirkung.jpg using Guid(c0ff5b926fcb1bd429a90edbf65e3210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58be611a816cdd3fb580019f9be34dc') in 0.110822 seconds
+  Import took 0.113401 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002519 seconds.
+Registered in 0.001356 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.317 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.5 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1642.
-Total: 2.603900 ms (FindLiveObjects: 0.303900 ms CreateObjectMapping: 0.092400 ms MarkObjects: 2.095200 ms  DeleteObjects: 0.111000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 951.654566 seconds.
-  path: Assets/Materials/Video_Texture.renderTexture
-  artifactKey: Guid(0381991a5ec4c924d8463b416f8d2c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Video_Texture.renderTexture using Guid(0381991a5ec4c924d8463b416f8d2c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d2fd8ba97a629991f70e353adf086b') in 0.121283 seconds
-  Import took 0.125324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/Materials/VideoOutput.renderTexture
-  artifactKey: Guid(1be4915f8e820f5428bc30f571b9fcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/VideoOutput.renderTexture using Guid(1be4915f8e820f5428bc30f571b9fcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53445b40fd364f4a06f26a39e188a50') in 0.012179 seconds
-  Import took 0.014955 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001513 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.268 seconds
+- Completed reload, in  1.281 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.6 MB.
+System memory in use before: 66.1 MB.
+System memory in use after: 66.2 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1649.
-Total: 2.369400 ms (FindLiveObjects: 0.175800 ms CreateObjectMapping: 0.054800 ms MarkObjects: 2.027400 ms  DeleteObjects: 0.109900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001287 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.146 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.6 MB.
-System memory in use after: 67.6 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1652.
-Total: 2.949700 ms (FindLiveObjects: 0.253000 ms CreateObjectMapping: 0.077800 ms MarkObjects: 2.473000 ms  DeleteObjects: 0.144200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001250 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.934 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.6 MB.
-System memory in use after: 67.6 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1655.
-Total: 2.120600 ms (FindLiveObjects: 0.235600 ms CreateObjectMapping: 0.055100 ms MarkObjects: 1.731700 ms  DeleteObjects: 0.095600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001277 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.975 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.6 MB.
-System memory in use after: 67.6 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1658.
-Total: 2.590000 ms (FindLiveObjects: 0.258300 ms CreateObjectMapping: 0.054700 ms MarkObjects: 2.132300 ms  DeleteObjects: 0.142000 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1642.
+Total: 2.319600 ms (FindLiveObjects: 0.170600 ms CreateObjectMapping: 0.048000 ms MarkObjects: 1.979000 ms  DeleteObjects: 0.120500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1040.451715 seconds.
-  path: Assets/3Dfrk/Frames with pictures
-  artifactKey: Guid(d0f6c004e30f8ea47beae89302b286fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3Dfrk/Frames with pictures using Guid(d0f6c004e30f8ea47beae89302b286fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450bf6a82123ac71deaa6450a541d010') in 0.010374 seconds
-  Import took 0.015122 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027730 seconds.
-  path: Assets/3Dfrk/Frames with pictures
-  artifactKey: Guid(d0f6c004e30f8ea47beae89302b286fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3Dfrk/Frames with pictures using Guid(d0f6c004e30f8ea47beae89302b286fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450bf6a82123ac71deaa6450a541d010') in 0.006781 seconds
-  Import took 0.010006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 59.470790 seconds.
-  path: Assets/Furniture_ges1/PostProcessing.asset
-  artifactKey: Guid(62a81ea9143806d4da8feaa9cf41ba0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furniture_ges1/PostProcessing.asset using Guid(62a81ea9143806d4da8feaa9cf41ba0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c90ad2b5c31f87ace4629318e1890ee') in 0.011417 seconds
-  Import took 0.014809 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001364 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.961 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.6 MB.
-System memory in use after: 67.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1661.
-Total: 2.332700 ms (FindLiveObjects: 0.467600 ms CreateObjectMapping: 0.116500 ms MarkObjects: 1.642900 ms  DeleteObjects: 0.103500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 137.831455 seconds.
-  path: Assets/Tree_Textures/diffuse.png
-  artifactKey: Guid(a0e1dc6f3b18fbe49a1bfc99d1085d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree_Textures/diffuse.png using Guid(a0e1dc6f3b18fbe49a1bfc99d1085d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef187a2c3a47d0bd5bab3cbd9e5c9f9') in 0.086550 seconds
-  Import took 0.091633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/Tree_Textures/translucency_gloss.png
-  artifactKey: Guid(76e13f52b889fa345bafee2adbcd2d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree_Textures/translucency_gloss.png using Guid(76e13f52b889fa345bafee2adbcd2d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a1c0b2da76b2967587d207d13bf277') in 0.014968 seconds
-  Import took 0.017995 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000356 seconds.
-  path: Assets/Tree_Textures/shadow.png
-  artifactKey: Guid(557c6b61db3a66245913468c844a864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree_Textures/shadow.png using Guid(557c6b61db3a66245913468c844a864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b458a1b8d400b3d532e531022a0f03') in 0.033235 seconds
-  Import took 0.036633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Tree_Textures/normal_specular.png
-  artifactKey: Guid(15b25bfeed67be54cb19766c58598a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree_Textures/normal_specular.png using Guid(15b25bfeed67be54cb19766c58598a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01082b5d98467fe7e5c4aff4c9336caa') in 0.030804 seconds
-  Import took 0.033479 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 668.179418 seconds.
-  path: Assets/Sounds
-  artifactKey: Guid(8aee7fc6031b2eb47bd1178b314acc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds using Guid(8aee7fc6031b2eb47bd1178b314acc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd5e6c9de715451381a26cefb208816') in 0.007601 seconds
-  Import took 0.011370 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015991 seconds.
-  path: Assets/Sounds
-  artifactKey: Guid(8aee7fc6031b2eb47bd1178b314acc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds using Guid(8aee7fc6031b2eb47bd1178b314acc87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd5e6c9de715451381a26cefb208816') in 0.006456 seconds
-  Import took 0.010371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.024862 seconds.
-  path: Assets/Sounds/confirmation_001.ogg
-  artifactKey: Guid(69210d98c7536c4418d236b0c5892c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/confirmation_001.ogg using Guid(69210d98c7536c4418d236b0c5892c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b5af77c3ee964bc2544e97334bfc18a') in 0.064699 seconds
-  Import took 0.069159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.843135 seconds.
-  path: Assets/Sounds/back_004.ogg
-  artifactKey: Guid(442ae934c22392046b6ea950d4e774cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/back_004.ogg using Guid(442ae934c22392046b6ea950d4e774cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1e0a1da029af29a85b7e67604473dd') in 0.103199 seconds
-  Import took 0.107420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/Sounds/drop_002.ogg
-  artifactKey: Guid(328a123fbab4b1c41bfdf2285bbb1f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/drop_002.ogg using Guid(328a123fbab4b1c41bfdf2285bbb1f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6128b32f2421b57d4c3c203cd6b7e0') in 0.017484 seconds
-  Import took 0.020269 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001308 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.088 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.6 MB.
-System memory in use after: 67.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1667.
-Total: 3.828600 ms (FindLiveObjects: 0.447800 ms CreateObjectMapping: 0.123700 ms MarkObjects: 3.053100 ms  DeleteObjects: 0.201000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001616 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.042 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.6 MB.
-System memory in use after: 67.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1670.
-Total: 2.540900 ms (FindLiveObjects: 0.315600 ms CreateObjectMapping: 0.128100 ms MarkObjects: 1.983500 ms  DeleteObjects: 0.111900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004274 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.383 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.6 MB.
-System memory in use after: 67.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1673.
-Total: 4.775800 ms (FindLiveObjects: 0.627800 ms CreateObjectMapping: 0.160600 ms MarkObjects: 3.793200 ms  DeleteObjects: 0.187700 ms)
+  Time since last request: 944.433987 seconds.
+  path: Assets/key1.blend
+  artifactKey: Guid(752dc6d665705db4db575beed4f4812f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/key1.blend using Guid(752dc6d665705db4db575beed4f4812f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789439aa37a7f50744ec7886d6d60b3e') in 0.182019 seconds
+  Import took 0.187933 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

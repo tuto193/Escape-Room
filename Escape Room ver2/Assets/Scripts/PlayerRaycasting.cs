@@ -73,7 +73,6 @@ public class PlayerRaycasting : MonoBehaviour
     
     private void LateUpdate()
     {
-        
 
         if (_collected >= _winningThreshold && !_wonTheGame)
         {
