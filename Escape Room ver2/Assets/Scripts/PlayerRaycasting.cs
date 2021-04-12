@@ -81,10 +81,10 @@ public class PlayerRaycasting : MonoBehaviour
         {
             _key.SetActive(true);
             keyTextBackground.gameObject.SetActive(true);
-            _source.clip = keyAppears;
-            _source.Play();
             _source.clip = keyTextAudio;
+            _source.volume = 1f;
             _source.Play();
+            
 
             Debug.Log("You solved all the riddles and suddenly you hear a strange noise behind you. What is it?");
             //Debug.Log(string.Format("You took : {} seconds", Time.realtimeSinceStartup));
@@ -102,10 +102,14 @@ public class PlayerRaycasting : MonoBehaviour
                 Destroy(videoPlayer.gameObject);
                 _shownIntro = true;
                 _source.clip = startTextAudio;
+                _source.volume = 1f;
                 _source.Play();
             }
             else if (_wonTheGame)
             {
+                _source.clip = keyAppears;
+                _source.volume = 0.5f;
+                _source.Play();
                 keyTextBackground.gameObject.SetActive(false);
             }
         }
@@ -139,6 +143,7 @@ public class PlayerRaycasting : MonoBehaviour
                         inputF.gameObject.SetActive(true);
                         inputF.ActivateInputField();
                         _source.clip = drop;
+                        _source.volume = 0.4f;
                         _source.Play();
                     }
                     else
@@ -157,6 +162,7 @@ public class PlayerRaycasting : MonoBehaviour
                             Debug.Log("Collected " + _objectThatIHit.collider.gameObject.name);
                             Destroy(_objectThatIHit.collider.gameObject);
                             _source.clip = collect;
+                            _source.volume = 0.5f;
                             _source.Play();
                             int currentState = (int) Char.GetNumericValue(_currentRiddle[2]);
                             if (currentState < _winningThreshold)
@@ -181,13 +187,16 @@ public class PlayerRaycasting : MonoBehaviour
                 }
                 else if (_objectThatIHit.collider.gameObject.CompareTag("Key"))
                 {
+                    _source.clip = gameEnd;
+                    _source.volume = 0.5f;
+                    _source.Play();
                     Debug.Log("hit key");
                     _key.SetActive(false);
                     endText.gameObject.SetActive(true);
                     endTextBackground.gameObject.SetActive(true);
-                    _source.clip = gameEnd;
-                    _source.Play();
+
                     _source.clip = endTextAudio;
+                    _source.volume = 1f;
                     _source.Play();
                 }
             }
@@ -210,6 +219,7 @@ public class PlayerRaycasting : MonoBehaviour
                  inputF.text == "Skip" || _objectThatIHit.collider.gameObject.GetComponent<KeyCards>().Text == inputF.text)
         {
             _source.clip = confirmation;
+            _source.volume = 0.4f;
             _source.Play();
             inputF.DeactivateInputField(true);
             inputF.gameObject.SetActive(false);
@@ -217,6 +227,7 @@ public class PlayerRaycasting : MonoBehaviour
         else
         {
             _source.clip = noConfirmation;
+            _source.volume = 0.8f;
             _source.Play();
             Debug.Log("The answer is not correct. Try again!");
         }
