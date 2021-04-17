@@ -706,7 +706,6 @@ GameObject:
   m_Component:
   - component: {fileID: 178617920}
   - component: {fileID: 178617919}
-  - component: {fileID: 178617921}
   - component: {fileID: 178617922}
   - component: {fileID: 178617923}
   m_Layer: 0
@@ -751,22 +750,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &178617921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178617918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4ce2ef30ca0544a8e311473d155b07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  steps: {fileID: 8300000, guid: 6d7aa98549d3b0b4faf1d61972f140f3, type: 3}
-  controller: {fileID: 178617919}
-  speed: 12
-  interactablePic: {fileID: 0}
 --- !u!114 &178617922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,6 +780,9 @@ MonoBehaviour:
   startTextAudio: {fileID: 0}
   endTextAudio: {fileID: 0}
   inputF: {fileID: 366796707}
+  controller: {fileID: 178617919}
+  speed: 12
+  interactablePic: {fileID: 0}
 --- !u!82 &178617923
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2884,6 +2870,9 @@ MonoBehaviour:
   startTextAudio: {fileID: 8300000, guid: ff2cefcf41cb7284a9e828c281a5d2e4, type: 3}
   endTextAudio: {fileID: 8300000, guid: 93975e2cf17ccd74e9d4c5dc0a5e66a3, type: 3}
   inputF: {fileID: 366796707}
+  controller: {fileID: 178617919}
+  speed: 12
+  interactablePic: {fileID: 0}
 --- !u!82 &528551747
 AudioSource:
   m_ObjectHideFlags: 0

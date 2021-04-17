@@ -9,7 +9,7 @@ using UnityEngine.Video;
 
 public class PlayerRaycasting : MonoBehaviour
 {
-    // how long we want our raycast to draw out 
+    // how long we want our raycast to draw out
     public float distanceToSee;
     // to store the object that I hit with my ray
     private RaycastHit _objectThatIHit;
@@ -41,6 +41,16 @@ public class PlayerRaycasting : MonoBehaviour
     private bool _shownIntro;
     //public TextMeshProUGUI inputField;
     public TMP_InputField inputF;
+
+    public CharacterController controller;
+
+    private bool can_move;
+    public bool CanMove { get{return can_move;} set{can_move = value;} }
+
+    public float speed = 12f;
+    // To interact with Pictures
+    public GameObject interactablePic;
+
     void Start()
     {
         _source = this.GetComponent<AudioSource>();
@@ -67,13 +77,14 @@ public class PlayerRaycasting : MonoBehaviour
             }
             else
             {
-               _riddles[i].SetActive(false); 
+               _riddles[i].SetActive(false);
             }
         }
         _seenRiddle = false;
+        can_move = true;
 
     }
-    
+
     private void LateUpdate()
     {
 
@@ -84,7 +95,7 @@ public class PlayerRaycasting : MonoBehaviour
             _source.clip = keyTextAudio;
             _source.volume = 1f;
             _source.Play();
-            
+
 
             Debug.Log("You solved all the riddles and suddenly you hear a strange noise behind you. What is it?");
             //Debug.Log(string.Format("You took : {} seconds", Time.realtimeSinceStartup));
@@ -117,30 +128,31 @@ public class PlayerRaycasting : MonoBehaviour
         {
             startTextBackground.gameObject.SetActive(false);
             progressBar.gameObject.SetActive(true);
-            
+
         }
-        
-        
+
+
         Debug.DrawRay(this.transform.position, this.transform.forward * distanceToSee, Color.magenta);
-        
+
         if(Physics.Raycast(this.transform.position, this.transform.forward, out _objectThatIHit, distanceToSee))
         {
             if (Input.GetKey(KeyCode.Space))
             {
-                // if the object I collided with is a Puzzle 
+                // if the object I collided with is a Puzzle
                 // (solve pictures by order maybe with enum (https://www.youtube.com/watch?v=isiOcFXubXY) --> next video maybe also for opening door)
                 if (_objectThatIHit.collider.gameObject.CompareTag("Puzzle"))
                 {
                     if (_objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle)
                     {
 
-                        // puzzle will be displayed  
-                        // and also the input field 
+                        // puzzle will be displayed
+                        // and also the input field
                         Debug.Log("Please solve the " + _objectThatIHit.collider.gameObject.name);
                         _currentRiddle = _objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber
                             .ToString();
                         _seenRiddle = true;
                         inputF.gameObject.SetActive(true);
+                        can_move = false;
                         inputF.ActivateInputField();
                         _source.clip = drop;
                         _source.volume = 0.4f;
@@ -151,8 +163,8 @@ public class PlayerRaycasting : MonoBehaviour
                         Debug.Log("Not possible yet. Please solve the riddle with " + _currentRiddle + " first. This is the riddle with " + _objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber);
                     }
                 }
-                
-                // if the thing I collided with is an "answer"-object 
+
+                // if the thing I collided with is an "answer"-object
                 else if (_objectThatIHit.collider.gameObject.CompareTag("Collectable"))
                 {
                     if (_objectThatIHit.collider.gameObject.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle)
@@ -201,7 +213,13 @@ public class PlayerRaycasting : MonoBehaviour
                 }
             }
         }
-        
+        if (can_move) {
+            float x = Input.GetAxis("Horizontal");
+            float z = Input.GetAxis("Vertical");
+            Vector3 move = transform.right * x + transform.forward * z;
+            controller.Move(move * (speed * Time.deltaTime));
+        }
+
     }
 
     public void ReadInput()
@@ -231,6 +249,7 @@ public class PlayerRaycasting : MonoBehaviour
             _source.Play();
             Debug.Log("The answer is not correct. Try again!");
         }
-        
+        this.can_move = true;
+
     }
-} 
+}
