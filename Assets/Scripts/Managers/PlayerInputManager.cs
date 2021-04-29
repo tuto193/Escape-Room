@@ -4,17 +4,17 @@ public class PlayerInputManager: MonoBehaviour {
     [Tooltip("Sensitivity of camera when looking around")]
     public float LookSensitivity = 1f;
 
-    GameManager m_GameManager;
-    PlayerCharacterController m_PlayerCharacterController;
+    // GameManager m_GameManager;
+    // PlayerCharacterController m_PlayerCharacterController;
     bool m_LeftMouseWasHeld;
 
     void Start()
     {
-        m_PlayerCharacterController = GetComponent<PlayerCharacterController>();
-        DebugUtility.HandleErrorIfNullGetComponent<PlayerCharacterController, PlayerInputManager>(
-            m_PlayerCharacterController, this, gameObject);
-        m_GameManager = FindObjectOfType<GameManager>();
-        DebugUtility.HandleErrorIfNullFindObject<GameManager, PlayerInputManager>(m_GameManager, this);
+        // m_PlayerCharacterController = GetComponent<PlayerCharacterController>();
+        // DebugUtility.HandleErrorIfNullGetComponent<PlayerCharacterController, PlayerInputManager>(
+            // m_PlayerCharacterController, this, gameObject);
+        // m_GameManager = FindObjectOfType<GameManager>();
+        // DebugUtility.HandleErrorIfNullFindObject<GameManager, PlayerInputManager>(m_GameManager, this);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -27,23 +27,25 @@ public class PlayerInputManager: MonoBehaviour {
 
     public bool CanProcessInput()
     {
-        return Cursor.lockState == CursorLockMode.Locked && !m_GameManager.GameIsEnding;
+        // return Cursor.lockState == CursorLockMode.Locked && !m_GameManager.GameIsEnding;
+        return true; // remove later
     }
 
     public Vector3 GetMoveInput()
     {
         if (CanProcessInput())
         {
-            Vector3 move = new Vector3(
-                Input.GetAxisRaw(GameConstants.k_AxisNameHorizontal),
-                0f,
-                Input.GetAxisRaw(GameConstants.k_AxisNameVertical)
-            );
+            // Vector3 move = new Vector3(
+            //     Input.GetAxisRaw(GameConstants.k_AxisNameHorizontal),
+            //     0f,
+            //     Input.GetAxisRaw(GameConstants.k_AxisNameVertical)
+            // );
 
-            // constrain move input to a maximum magnitude of 1, otherwise diagonal movement might exceed the max move speed defined
-            move = Vector3.ClampMagnitude(move, 1);
+            // // constrain move input to a maximum magnitude of 1, otherwise diagonal movement might exceed the max move speed defined
+            // move = Vector3.ClampMagnitude(move, 1);
 
-            return move;
+            // return move;
+            return new Vector3(1f, 1f, 1f);
         }
 
         return Vector3.zero;
@@ -51,21 +53,23 @@ public class PlayerInputManager: MonoBehaviour {
 
     public float GetLookInputsHorizontal()
     {
-        return GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameHorizontal,
-            GameConstants.k_AxisNameJoystickLookHorizontal);
+        // return GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameHorizontal,
+            // GameConstants.k_AxisNameJoystickLookHorizontal);
+        return 0f;
     }
 
     public float GetLookInputsVertical()
     {
-        return GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameVertical,
-            GameConstants.k_AxisNameJoystickLookVertical);
+        // return GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameVertical,
+        //     GameConstants.k_AxisNameJoystickLookVertical);
+        return 0f;
     }
 
     public bool GetJumpInputDown()
     {
         if (CanProcessInput())
         {
-            return Input.GetButtonDown(GameConstants.k_ButtonNameJump);
+            // return Input.GetButtonDown(GameConstants.k_ButtonNameJump);
         }
 
         return false;
@@ -75,7 +79,7 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            return Input.GetButton(GameConstants.k_ButtonNameJump);
+            // return Input.GetButton(GameConstants.k_ButtonNameJump);
         }
 
         return false;
@@ -95,15 +99,15 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) != 0f;
-            if (isGamepad)
-            {
-                return Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) >= TriggerAxisThreshold;
-            }
-            else
-            {
-                return Input.GetButton(GameConstants.k_ButtonNameFire);
-            }
+            // bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) != 0f;
+            // if (isGamepad)
+            // {
+            //     return Input.GetAxis(GameConstants.k_ButtonNameGamepadFire) >= TriggerAxisThreshold;
+            // }
+            // else
+            // {
+            //     return Input.GetButton(GameConstants.k_ButtonNameFire);
+            // }
         }
 
         return false;
@@ -113,11 +117,11 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) != 0f;
-            bool i = isGamepad
-                ? (Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) > 0f)
-                : Input.GetButton(GameConstants.k_ButtonNameAim);
-            return i;
+            // bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) != 0f;
+            // bool i = isGamepad
+            //     ? (Input.GetAxis(GameConstants.k_ButtonNameGamepadAim) > 0f)
+            //     : Input.GetButton(GameConstants.k_ButtonNameAim);
+            // return i;
         }
 
         return false;
@@ -127,7 +131,7 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            return Input.GetButton(GameConstants.k_ButtonNameSprint);
+            // return Input.GetButton(GameConstants.k_ButtonNameSprint);
         }
 
         return false;
@@ -137,7 +141,7 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            return Input.GetButtonDown(GameConstants.k_ButtonNameCrouch);
+            // return Input.GetButtonDown(GameConstants.k_ButtonNameCrouch);
         }
 
         return false;
@@ -147,7 +151,7 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            return Input.GetButtonUp(GameConstants.k_ButtonNameCrouch);
+            // return Input.GetButtonUp(GameConstants.k_ButtonNameCrouch);
         }
 
         return false;
@@ -157,7 +161,7 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            return Input.GetButtonDown(GameConstants.k_ButtonReload);
+            // return Input.GetButtonDown(GameConstants.k_ButtonReload);
         }
 
         return false;
@@ -168,19 +172,19 @@ public class PlayerInputManager: MonoBehaviour {
         if (CanProcessInput())
         {
 
-            bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadSwitchWeapon) != 0f;
-            string axisName = isGamepad
-                ? GameConstants.k_ButtonNameGamepadSwitchWeapon
-                : GameConstants.k_ButtonNameSwitchWeapon;
+            // bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadSwitchWeapon) != 0f;
+            // string axisName = isGamepad
+            //     ? GameConstants.k_ButtonNameGamepadSwitchWeapon
+            //     : GameConstants.k_ButtonNameSwitchWeapon;
 
-            if (Input.GetAxis(axisName) > 0f)
-                return -1;
-            else if (Input.GetAxis(axisName) < 0f)
-                return 1;
-            else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) > 0f)
-                return -1;
-            else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) < 0f)
-                return 1;
+            // if (Input.GetAxis(axisName) > 0f)
+            //     return -1;
+            // else if (Input.GetAxis(axisName) < 0f)
+            //     return 1;
+            // else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) > 0f)
+            //     return -1;
+            // else if (Input.GetAxis(GameConstants.k_ButtonNameNextWeapon) < 0f)
+            //     return 1;
         }
 
         return 0;
@@ -223,9 +227,6 @@ public class PlayerInputManager: MonoBehaviour {
             bool isGamepad = Input.GetAxis(stickInputName) != 0f;
             float i = isGamepad ? Input.GetAxis(stickInputName) : Input.GetAxisRaw(mouseInputName);
 
-            // handle inverting vertical input
-            if (InvertYAxis)
-                i *= -1f;
 
             // apply sensitivity multiplier
             i *= LookSensitivity;
