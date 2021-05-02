@@ -52,9 +52,7 @@ public class PlayerInputManager: MonoBehaviour {
 
     public float GetLookInputsHorizontal()
     {
-        // return GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameHorizontal,
-            // GameConstants.k_AxisNameJoystickLookHorizontal);
-        return 0f;
+        return GetMouseLookAxis("Mouse X");
     }
 
     public float GetLookInputsVertical()
@@ -103,7 +101,7 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            return Input.GetButton("Fire1");
+            return Input.GetMouseButtonDown(0);
         }
 
         return false;
@@ -113,7 +111,7 @@ public class PlayerInputManager: MonoBehaviour {
     {
         if (CanProcessInput())
         {
-            bool i = Input.GetButton("Fire2");
+            bool i = Input.GetMouseButtonDown(1);
             return i;
         }
 
