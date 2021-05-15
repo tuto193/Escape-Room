@@ -45,7 +45,7 @@ public class PlayerCharacterController : MonoBehaviour {
     [Tooltip("Height at which the player dies instantly when falling off the map")]
     public float KillHeight = -50f;
 
-    private bool _can_move;
+    private bool _can_move = true;
 
 
     [Header("Rotation")]
