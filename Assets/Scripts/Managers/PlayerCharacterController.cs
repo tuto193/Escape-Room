@@ -93,16 +93,16 @@ public class PlayerCharacterController : MonoBehaviour {
     public AudioClip FallDamageSfx;
 
         [Header("Fall Damage")]
-    [Tooltip("Whether the player will recieve damage when hitting the ground at high speed")]
-    public bool RecievesFallDamage;
+    [Tooltip("Whether the player will receive damage when hitting the ground at high speed")]
+    public bool ReceivesFallDamage;
 
-    [Tooltip("Minimun fall speed for recieving fall damage")]
+    [Tooltip("Minimun fall speed for receiving fall damage")]
     public float MinSpeedForFallDamage = 10f;
 
-    [Tooltip("Fall speed for recieving th emaximum amount of fall damage")]
+    [Tooltip("Fall speed for receiving the maximum amount of fall damage")]
     public float MaxSpeedForFallDamage = 30f;
 
-    [Tooltip("Damage recieved when falling at the mimimum speed")]
+    [Tooltip("Damage received when falling at the mimimum speed")]
     public float FallDamageAtMinSpeed = 10f;
 
     [Tooltip("Damage received when falling at the maximum speed")]
@@ -174,8 +174,7 @@ public class PlayerCharacterController : MonoBehaviour {
         Debug.DrawRay(this.transform.position, this.transform.forward * distanceToSee, Color.magenta);
 
         // check for Y kill
-        if (!IsDead && transform.position.y < KillHeight)
-        {
+        if (!IsDead && transform.position.y < KillHeight) {
             m_Health.Kill();
         }
 
@@ -191,7 +190,7 @@ public class PlayerCharacterController : MonoBehaviour {
             float fallSpeed = -Mathf.Min(CharacterVelocity.y, m_LatestImpactSpeed.y);
             float fallSpeedRatio = (fallSpeed - MinSpeedForFallDamage) /
                                    (MaxSpeedForFallDamage - MinSpeedForFallDamage);
-            if (RecievesFallDamage && fallSpeedRatio > 0f)
+            if (ReceivesFallDamage && fallSpeedRatio > 0f)
             {
                 float dmgFromFall = Mathf.Lerp(FallDamageAtMinSpeed, FallDamageAtMaxSpeed, fallSpeedRatio);
                 m_Health.TakeDamage(dmgFromFall, null);
@@ -221,11 +220,11 @@ public class PlayerCharacterController : MonoBehaviour {
                 string object_tag = seenObject.tag;
                 switch(object_tag) {
                     case "Puzzle":
-                        GameManager.Instance.HandleClickedPuzzle(seenObject);
+                        GameManager.Instance.HandleClickedPuzzle(ref seenObject);
                         _can_move = false;
                         break;
                     case "Collectable":
-                        GameManager.Instance.HandleClickedCollectable(seenObject);
+                        GameManager.Instance.HandleClickedCollectable(ref seenObject);
                         break;
                     case "Key":
                         // End Game (?)
@@ -234,7 +233,9 @@ public class PlayerCharacterController : MonoBehaviour {
                 }
             }
         }
-        HandleCharacterMovement();
+        if (_can_move) {
+            HandleCharacterMovement();
+        }
     }
 
     void OnDie()
@@ -480,5 +481,10 @@ public class PlayerCharacterController : MonoBehaviour {
 
         IsCrouching = crouched;
         return true;
+    }
+
+    public void ReadInput() {
+        GameManager.Instance.HandleTextInput(_ObjectInSight.collider.gameObject.GetComponent<KeyCards>().Text);
+        _can_move = true;
     }
 }

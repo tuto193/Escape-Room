@@ -251,7 +251,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void HandleClickedPuzzle(GameObject puzzle) {
+    public void HandleClickedPuzzle(ref GameObject puzzle) {
         if (puzzle.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle) {
 
             // puzzle will be displayed
@@ -272,7 +272,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void HandleClickedCollectable(GameObject collectable) {
+    public void HandleClickedCollectable(ref GameObject collectable) {
         if (collectable.GetComponent<KeyCards>().whatIsMyNumber.ToString() == _currentRiddle) {
             if (_seenRiddle == true) {
                 Debug.Log("Collected " + collectable.name);
@@ -313,6 +313,34 @@ public class GameManager : MonoBehaviour
         AudioSource.clip = EndTextSfx;
         AudioSource.volume = 1f;
         AudioSource.Play();
+    }
+
+
+    public void HandleTextInput(String objectText) {
+        print(InputField.text);
+        if (InputField.text == null)
+        {
+            Debug.Log("No input text.");
+        }
+        else if (objectText == null)
+        {
+            Debug.Log("No object or no text of object.");
+        }
+        else if (objectText.ToUpper() == "SKIP" || objectText == InputField.text)
+        {
+            AudioSource.clip = CorrectSfx;
+            AudioSource.volume = 0.4f;
+            AudioSource.Play();
+            InputField.DeactivateInputField(true);
+            InputField.gameObject.SetActive(false);
+        }
+        else
+        {
+            AudioSource.clip = WrongSfx;
+            AudioSource.volume = 0.8f;
+            AudioSource.Play();
+            Debug.Log("The answer is not correct. Try again!");
+        }
     }
     private void OnApplicationQuit()
     {
