@@ -111,10 +111,10 @@ public class PlayerCharacterController : MonoBehaviour {
     public UnityAction<bool> OnStanceChanged;
 
     public Vector3 CharacterVelocity { get; set; }
-    public bool IsGrounded { get; private set; }
-    public bool HasJumpedThisFrame { get; private set; }
+    // public bool IsGrounded { get; private set; }
+    // public bool HasJumpedThisFrame { get; private set; }
     public bool IsDead { get; private set; }
-    public bool IsCrouching { get; private set; }
+    // public bool IsCrouching { get; private set; }
 
 
     Health m_Health;
@@ -178,38 +178,38 @@ public class PlayerCharacterController : MonoBehaviour {
             m_Health.Kill();
         }
 
-        HasJumpedThisFrame = false;
+        // HasJumpedThisFrame = false;
 
-        bool wasGrounded = IsGrounded;
-        GroundCheck();
+        // bool wasGrounded = IsGrounded;
+        // GroundCheck();
 
         // landing
-        if (IsGrounded && !wasGrounded)
-        {
-            // Fall damage
-            float fallSpeed = -Mathf.Min(CharacterVelocity.y, m_LatestImpactSpeed.y);
-            float fallSpeedRatio = (fallSpeed - MinSpeedForFallDamage) /
-                                   (MaxSpeedForFallDamage - MinSpeedForFallDamage);
-            if (ReceivesFallDamage && fallSpeedRatio > 0f)
-            {
-                float dmgFromFall = Mathf.Lerp(FallDamageAtMinSpeed, FallDamageAtMaxSpeed, fallSpeedRatio);
-                m_Health.TakeDamage(dmgFromFall, null);
+        // if (IsGrounded && !wasGrounded)
+        // {
+        //     // Fall damage
+        //     float fallSpeed = -Mathf.Min(CharacterVelocity.y, m_LatestImpactSpeed.y);
+        //     float fallSpeedRatio = (fallSpeed - MinSpeedForFallDamage) /
+        //                            (MaxSpeedForFallDamage - MinSpeedForFallDamage);
+        //     if (ReceivesFallDamage && fallSpeedRatio > 0f)
+        //     {
+        //         float dmgFromFall = Mathf.Lerp(FallDamageAtMinSpeed, FallDamageAtMaxSpeed, fallSpeedRatio);
+        //         m_Health.TakeDamage(dmgFromFall, null);
 
-                // fall damage SFX
-                AudioSource.PlayOneShot(FallDamageSfx);
-            }
-            else
-            {
-                // land SFX
-                AudioSource.PlayOneShot(LandSfx);
-            }
-        }
+        //         // fall damage SFX
+        //         AudioSource.PlayOneShot(FallDamageSfx);
+        //     }
+        //     else
+        //     {
+        //         // land SFX
+        //         AudioSource.PlayOneShot(LandSfx);
+        //     }
+        // }
 
         // crouching
-        if (m_InputManager.GetCrouchInputDown())
-        {
-            SetCrouchingState(!IsCrouching, false);
-        }
+        // if (m_InputManager.GetCrouchInputDown())
+        // {
+        //     SetCrouchingState(!IsCrouching, false);
+        // }
 
         UpdateCharacterHeight(false);
 
@@ -247,43 +247,43 @@ public class PlayerCharacterController : MonoBehaviour {
 
     }
 
-    void GroundCheck()
-    {
-        // Make sure that the ground check distance while already in air is very small, to prevent suddenly snapping to ground
-        float chosenGroundCheckDistance =
-            IsGrounded ? (m_Controller.skinWidth + GroundCheckDistance) : k_GroundCheckDistanceInAir;
+    // void GroundCheck()
+    // {
+    //     // Make sure that the ground check distance while already in air is very small, to prevent suddenly snapping to ground
+    //     float chosenGroundCheckDistance =
+    //         IsGrounded ? (m_Controller.skinWidth + GroundCheckDistance) : k_GroundCheckDistanceInAir;
 
-        // reset values before the ground check
-        IsGrounded = false;
-        m_GroundNormal = Vector3.up;
+    //     // reset values before the ground check
+    //     IsGrounded = false;
+    //     m_GroundNormal = Vector3.up;
 
-        // only try to detect ground if it's been a short amount of time since last jump; otherwise we may snap to the ground instantly after we try jumping
-        if (Time.time >= m_LastTimeJumped + k_JumpGroundingPreventionTime)
-        {
-            // if we're grounded, collect info about the ground normal with a downward capsule cast representing our character capsule
-            if (Physics.CapsuleCast(GetCapsuleBottomHemisphere(), GetCapsuleTopHemisphere(m_Controller.height),
-                m_Controller.radius, Vector3.down, out RaycastHit hit, chosenGroundCheckDistance, GroundCheckLayers,
-                QueryTriggerInteraction.Ignore))
-            {
-                // storing the upward direction for the surface found
-                m_GroundNormal = hit.normal;
+    //     // only try to detect ground if it's been a short amount of time since last jump; otherwise we may snap to the ground instantly after we try jumping
+    //     if (Time.time >= m_LastTimeJumped + k_JumpGroundingPreventionTime)
+    //     {
+    //         // if we're grounded, collect info about the ground normal with a downward capsule cast representing our character capsule
+    //         if (Physics.CapsuleCast(GetCapsuleBottomHemisphere(), GetCapsuleTopHemisphere(m_Controller.height),
+    //             m_Controller.radius, Vector3.down, out RaycastHit hit, chosenGroundCheckDistance, GroundCheckLayers,
+    //             QueryTriggerInteraction.Ignore))
+    //         {
+    //             // storing the upward direction for the surface found
+    //             m_GroundNormal = hit.normal;
 
-                // Only consider this a valid ground hit if the ground normal goes in the same direction as the character up
-                // and if the slope angle is lower than the character controller's limit
-                if (Vector3.Dot(hit.normal, transform.up) > 0f &&
-                    IsNormalUnderSlopeLimit(m_GroundNormal))
-                {
-                    IsGrounded = true;
+    //             // Only consider this a valid ground hit if the ground normal goes in the same direction as the character up
+    //             // and if the slope angle is lower than the character controller's limit
+    //             if (Vector3.Dot(hit.normal, transform.up) > 0f &&
+    //                 IsNormalUnderSlopeLimit(m_GroundNormal))
+    //             {
+    //                 IsGrounded = true;
 
-                    // handle snapping to the ground
-                    if (hit.distance > m_Controller.skinWidth)
-                    {
-                        m_Controller.Move(Vector3.down * hit.distance);
-                    }
-                }
-            }
-        }
-    }
+    //                 // handle snapping to the ground
+    //                 if (hit.distance > m_Controller.skinWidth)
+    //                 {
+    //                     m_Controller.Move(Vector3.down * hit.distance);
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     void HandleCharacterMovement() {
         // horizontal character rotation
@@ -312,13 +312,13 @@ public class PlayerCharacterController : MonoBehaviour {
             Vector3 worldspaceMoveInput = transform.TransformVector(m_InputManager.GetMoveInput());
 
             // handle grounded movement
-            if (IsGrounded)
+            // if (IsGrounded)
             {
                 // calculate the desired velocity from inputs, max speed, and current slope
                 Vector3 targetVelocity = worldspaceMoveInput * MaxSpeedOnGround;
                 // reduce speed if crouching by crouch speed ratio
-                if (IsCrouching)
-                    targetVelocity *= MaxSpeedCrouchedRatio;
+                // if (IsCrouching)
+                //     targetVelocity *= MaxSpeedCrouchedRatio;
                 targetVelocity = GetDirectionReorientedOnSlope(targetVelocity.normalized, m_GroundNormal) *
                                  targetVelocity.magnitude;
 
@@ -327,29 +327,29 @@ public class PlayerCharacterController : MonoBehaviour {
                     MovementSharpnessOnGround * Time.deltaTime);
 
                 // jumping
-                if (IsGrounded && m_InputManager.GetJumpInputDown())
-                {
-                    // force the crouch state to false
-                    if (SetCrouchingState(false, false))
-                    {
-                        // start by canceling out the vertical component of our velocity
-                        CharacterVelocity = new Vector3(CharacterVelocity.x, 0f, CharacterVelocity.z);
+                // if (IsGrounded && m_InputManager.GetJumpInputDown())
+                // {
+                //     // force the crouch state to false
+                //     if (SetCrouchingState(false, false))
+                //     {
+                //         // start by canceling out the vertical component of our velocity
+                //         CharacterVelocity = new Vector3(CharacterVelocity.x, 0f, CharacterVelocity.z);
 
-                        // then, add the jumpSpeed value upwards
-                        CharacterVelocity += Vector3.up * JumpForce;
+                //         // then, add the jumpSpeed value upwards
+                //         CharacterVelocity += Vector3.up * JumpForce;
 
-                        // play sound
-                        AudioSource.PlayOneShot(JumpSfx);
+                //         // play sound
+                //         AudioSource.PlayOneShot(JumpSfx);
 
-                        // remember last time we jumped because we need to prevent snapping to ground for a short time
-                        m_LastTimeJumped = Time.time;
-                        HasJumpedThisFrame = true;
+                //         // remember last time we jumped because we need to prevent snapping to ground for a short time
+                //         m_LastTimeJumped = Time.time;
+                //         HasJumpedThisFrame = true;
 
-                        // Force grounding to false
-                        IsGrounded = false;
-                        m_GroundNormal = Vector3.up;
-                    }
-                }
+                //         // Force grounding to false
+                //         IsGrounded = false;
+                //         m_GroundNormal = Vector3.up;
+                //     }
+                // }
 
                 // footsteps sound
                 float chosenFootstepSfxFrequency = FootstepSfxFrequency;
@@ -363,20 +363,20 @@ public class PlayerCharacterController : MonoBehaviour {
                 m_FootstepDistanceCounter += CharacterVelocity.magnitude * Time.deltaTime;
             }
             // handle air movement
-            else
-            {
-                // add air acceleration
-                CharacterVelocity += worldspaceMoveInput * AccelerationSpeedInAir * Time.deltaTime;
+            // else
+            // {
+            //     // add air acceleration
+            //     CharacterVelocity += worldspaceMoveInput * AccelerationSpeedInAir * Time.deltaTime;
 
-                // limit air speed to a maximum, but only horizontally
-                float verticalVelocity = CharacterVelocity.y;
-                Vector3 horizontalVelocity = Vector3.ProjectOnPlane(CharacterVelocity, Vector3.up);
-                horizontalVelocity = Vector3.ClampMagnitude(horizontalVelocity, MaxSpeedInAir);
-                CharacterVelocity = horizontalVelocity + (Vector3.up * verticalVelocity);
+            //     // limit air speed to a maximum, but only horizontally
+            //     float verticalVelocity = CharacterVelocity.y;
+            //     Vector3 horizontalVelocity = Vector3.ProjectOnPlane(CharacterVelocity, Vector3.up);
+            //     horizontalVelocity = Vector3.ClampMagnitude(horizontalVelocity, MaxSpeedInAir);
+            //     CharacterVelocity = horizontalVelocity + (Vector3.up * verticalVelocity);
 
-                // apply the gravity to the velocity
-                CharacterVelocity += Vector3.down * GravityDownForce * Time.deltaTime;
-            } // Character movement handling [END]
+            //     // apply the gravity to the velocity
+            //     CharacterVelocity += Vector3.down * GravityDownForce * Time.deltaTime;
+            // } // Character movement handling [END]
         }
 
         // apply the final calculated velocity value as a character movement
@@ -479,7 +479,7 @@ public class PlayerCharacterController : MonoBehaviour {
             OnStanceChanged.Invoke(crouched);
         }
 
-        IsCrouching = crouched;
+        // IsCrouching = crouched;
         return true;
     }
 
