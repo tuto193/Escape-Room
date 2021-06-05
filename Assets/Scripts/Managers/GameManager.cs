@@ -318,6 +318,7 @@ public class GameManager : MonoBehaviour
 
     public void HandleTextInput(String objectText) {
         print(InputField.text);
+
         if (InputField.text == null)
         {
             Debug.Log("No input text.");
