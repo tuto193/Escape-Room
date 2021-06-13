@@ -15,7 +15,7 @@ public class WeaponSystem : MonoBehaviour {
     public void AddMotion(ProjectileMotion new_mot, bool allow_duplicates = false) {
         if(!allow_duplicates) {
             foreach(var pm in _ProjectileMotions) {
-                if(new_mot is pm.GetType()) {
+                if(new_mot.GetType() == pm.GetType()) {
                     return;
                 }
             }
@@ -27,7 +27,7 @@ public class WeaponSystem : MonoBehaviour {
     public void AddProjectileEvent(ProjectileEvent new_eve, bool allow_duplicates = false) {
         if(!allow_duplicates) {
             foreach(var e in _ProjectileEvents) {
-                if(new_eve is e.GetType()) {
+                if(new_eve.GetType() == e.GetType()) {
                     return;
                 }
             }
