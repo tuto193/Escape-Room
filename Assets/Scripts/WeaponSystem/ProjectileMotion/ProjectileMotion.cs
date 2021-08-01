@@ -1,3 +1,3 @@
 using UnityEngine;
 
-public class ProjectileMotion : MonoBehaviour {}
+public interface IProjectileMotion {}
