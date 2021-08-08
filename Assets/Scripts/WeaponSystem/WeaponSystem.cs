@@ -7,20 +7,20 @@ public class WeaponSystem : MonoBehaviour {
 
     private ProjectileEmitter _ProjectileEmitter;
 
-    private List<IProjectileMotion> _ProjectileMotions;
+    public List<ProjectileMotion> ProjectileMotions;
 
     private List<ProjectileEvent> _ProjectileEvents;
 
 
-    public void AddMotion(IProjectileMotion new_mot, bool allow_duplicates = false) {
+    public void AddMotion(ProjectileMotion new_mot, bool allow_duplicates = false) {
         if(!allow_duplicates) {
-            foreach(var pm in _ProjectileMotions) {
+            foreach(var pm in ProjectileMotions) {
                 if(new_mot.GetType() == pm.GetType()) {
                     return;
                 }
             }
         }
-        _ProjectileMotions.Add(new_mot);
+        ProjectileMotions.Add(new_mot);
     }
 
 
