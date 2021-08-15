@@ -1,15 +1,15 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class WeaponSystem : MonoBehaviour {
-    public delegate void DamagedEvent(GameObject target, float amount);
-    public event DamagedEvent OnDamaged;
+    public Action<GameObject, float> OnDamaged;
 
     private ProjectileEmitter _ProjectileEmitter;
 
     public List<ProjectileMotion> ProjectileMotions;
 
-    private List<ProjectileEvent> _ProjectileEvents;
+    public List<ProjectileEvent> _ProjectileEvents;
 
 
     public void AddMotion(ProjectileMotion new_mot, bool allow_duplicates = false) {
