@@ -10,6 +10,8 @@ public class ProjectileEmitter : MonoBehaviour {
 
     [Tooltip("How long they're active after being instanced")]
     public float projectileLifetime = 1.0f;
+    
+    private List<GameObject> _spawned_objects;
 
     // The WS this is currently "attached" to
     public WeaponSystem weaponSystem;
@@ -18,12 +20,14 @@ public class ProjectileEmitter : MonoBehaviour {
         DoFire(transform.rotation, weaponSystem.ProjectileMotions, projectileLifetime);
     }
 
-    private void DoFire(Quaternion direction, List<ProjectileMotion> motions, float lifetime) {}
+    private void DoFire(Quaternion direction, List<ProjectileMotion> motions, float lifetime) {
+        return;
+    }
 
     private void OnProjectileCollided(GameObject target, Vector3 hit_location) {
         weaponSystem.OnDamaged(target, damagePerCollision);
         foreach(ProjectileEvent pe in weaponSystem._ProjectileEvents) {
-            // pe.tr
+            pe.Trigger(hit_location, sp)
         }
     }
 
